@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: `http://localhost/citbd/graphql`
+        url: `https://cit.creativejuniors.com/graphql`
       }
     },
     {
