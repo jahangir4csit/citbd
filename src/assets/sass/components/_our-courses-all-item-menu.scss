@@ -1,0 +1,48 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    All Courses Area Start
+=================================== */
+#all_courses_menu{
+    padding-bottom: 68px;
+}
+
+.courses_menu{
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li{
+            width: 19%;
+            height: 157px;
+            background: $white;
+            box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            .course_menu_single_item{
+                display: block;
+                text-align: center;
+                h4{
+                    color: $heading2_3;
+                    font-family: Hind Siliguri;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 23px;
+                    letter-spacing: 0em;
+                    padding-top: 16px;
+                    
+                    span{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+/* =================================
+    All Courses Area End
+=================================== */

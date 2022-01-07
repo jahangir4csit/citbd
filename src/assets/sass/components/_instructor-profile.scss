@@ -1,0 +1,145 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Instructor Profile Area Start
+=================================== */
+.instructor_profile{
+    background: #FFFFFF;
+    border: 6px solid rgba(207, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 23px 19px;
+}
+.instructor_img{
+    border-radius: 12px;
+    overflow: hidden;
+}
+.instructor_qualification{
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.instructor_profile_heading{
+    h1{
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0.20000000298023224px;
+        padding-bottom: 10px;
+    }
+    p{
+        color: #CF0000;
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.20000000298023224px;
+    }
+}
+.instructor_profile_inner_item{
+    h4{
+        color: #342B27;
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0.20000000298023224px;
+        padding-top: 13px;
+        padding-bottom: 4px;
+    }
+    ol{
+        list-style: disc !important;
+        margin-left: 14px;
+        li{
+            color: rgba(52, 43, 39, 0.8);
+            font-family: Ruposhi Bangla Unicode;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.20000000298023224px;         
+        }
+    }
+    h5{
+        color: $heading2_3;
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.20000000298023224px;        
+    }
+    .inner_icon{
+        img{
+            margin-right: 11px;
+            margin-bottom: 13px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+.market_icon{
+    padding-top: 14px;
+    img{
+        margin-right: 10px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+.experiance{
+    padding-bottom: 25px;
+    padding-bottom: 36pxx;
+}
+
+/* single_profile_item  Part Start*/
+// #single_profile_item{
+//     margin-top: 50px;
+//     background: #FFFFFF;
+//     border: 1px solid rgba(31, 30, 30, 0.07);
+//     border-radius: 30px;
+//     padding: 34px;
+// }
+.single_instructor{
+    margin-top: 50px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 30, 30, 0.07);
+    border-radius: 30px;
+    padding: 34px;
+}
+.single_profile_item{
+    display: flex;
+    align-items: center;
+    .single_profile_img{
+        width: 136px;
+        height: 136px;
+        border-radius: 50%;
+        margin-right: 22px;
+    }
+    .single_profile_name{
+        h4{
+            color: $heading2_3;
+            font-family: Hind Siliguri;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 26px;
+            letter-spacing: 0.20000000298023224px;
+            padding-bottom: 7px;            
+        }
+        p{
+            color: #CF0000;
+            font-family: Ruposhi Bangla Unicode;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.20000000298023224px;            
+        }
+    }
+}
+.single_pro_inner_item{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    padding-bottom: 12px;
+}
+/* =================================
+    Instructor Profile Area End
+=================================== */

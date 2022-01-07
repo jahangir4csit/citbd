@@ -1,0 +1,20 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/*==================================
+        About Page Start
+================================== */
+#about_top{
+    .about_top_img{
+        display: flex;
+        justify-content: center;
+        padding-top: 35px;
+        .single_img{
+            margin: 41px;
+        }
+    }
+}
+
+/*==================================
+        About Page Start
+================================== */

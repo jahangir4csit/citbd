@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Ruposhi Bangla Unicode bold;
+    src: url(../ruposhi-bangla/RuposhiBanglaUnicodeBold.ttf);
+}
+@font-face {
+    font-family: Ruposhi Bangla Unicode;
+    src: url(../ruposhi-bangla/RuposhiBanglaUnicode.ttf);
+}
+
+@import "./base/common";
+@import "./pages/index";
+@import "./pages/course-landing-page";
+@import "./pages/course-landing-page-2";
+@import "./pages/desktop-50";
+@import "./pages/our-facilities";
+@import "./pages/desktop-31";
+@import "./pages/our-courses";
+@import "./pages/desktop-32";
+@import "./pages/design-and-multimedia";
+@import "./pages/desktop-25";
+@import "./pages/success-story";
+@import "./pages/desktop-33";
+@import "./pages/instructors-and-teachers";
+@import "./pages/desktop-27";
+@import "./pages/about-us";
+@import "./pages/desktop-28";
+@import "./pages/free-seminer-schedule";
+@import "./pages/desktop-30";
+@import "./pages/contact-us";
+@import "./pages/blog";
+@import "./pages/blog-dtails-page";
+

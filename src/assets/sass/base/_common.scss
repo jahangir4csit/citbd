@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+span {
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-family: Hind Siliguri;
+}
+
+ul,
+ol,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    font-family: Ruposhi Bangla Unicode;
+}
+
+input,
+input:focus,
+button,
+button:focus {
+    outline: 0;
+}
+
+.main_container {
+    width: 84%;
+    margin-left: auto;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.video_icon {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    a {
+        display: block;
+
+        i {
+            color: #F03210;
+        }
+    }
+}
+/*Common Menu Slider Start*/
+.common_slider_class{
+    width: 100%;
+}
+div.success_menu ul.common_slider_class li .company_nav_tab {
+	font-size: 13px;
+    line-height: 21px;
+    text-align: left;
+    display: inline-block;
+}
+div.success_menu ul.common_slider_class li{
+    display: inline-block;
+	text-align: left;
+	margin-right: 0;
+}
+/*Common Menu Slider End*/
+
+/*=========All Common Css End=========*/

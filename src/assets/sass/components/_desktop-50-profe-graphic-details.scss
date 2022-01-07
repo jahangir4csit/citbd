@@ -1,0 +1,58 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    প্রফেশনাল গ্রাফিক্স ডিজাইন শুরু 
+=================================== */
+#desktop_50_pgc{
+    padding-top: 42px;
+    h1{
+        color: $heading2_3;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38px;
+        letter-spacing: 0.20000000298023224px;
+        padding-bottom: 2px;
+    }
+    p{
+        color: $pera;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0.20000000298023224px;
+    }
+}
+.admission_rule{
+
+ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    li {
+        width: 136px;
+        color: #000000;
+        font-family: Hind Siliguri;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        margin-right: 8px;
+        padding: 16px 0;
+        border-radius: 20px;
+        border: 0.5px solid rgba(0, 0, 0, 0.1);
+        span {
+            display: block;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0.11224490404129028px;
+            text-align: center;
+        }
+    }
+}
+} 
+
+/* =================================
+    প্রফেশনাল গ্রাফিক্স ডিজাইন শেষ  
+=================================== */

@@ -1,0 +1,26 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Info Area Start
+=================================== */
+#info{
+    padding-bottom: 40px;
+}
+
+#info .coursprevarrow {
+    @include transition;
+	color: rgba(0,0,0,0.3);
+}
+#info .cournextarrow {
+    @include transition;
+	color: rgba(0,0,0,0.3);
+}
+#info .coursprevarrow:hover,
+#info .coursnextarrow:hover{
+    color: #cf0000;
+}
+
+/* =================================
+    Info Area End
+=================================== */

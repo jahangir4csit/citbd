@@ -1,0 +1,77 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Populer Courses department Satrt
+=================================== */
+#course_department {
+    position: relative;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+.course_slider_top {
+    // background: violet;
+    .course_slider_item {
+        background: $white;
+        height: 157px;
+        @include radius(20px);
+        padding: 15px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.06);
+        margin: 25px 12px;
+        a{
+            display: block;
+            .couse_icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 25px;
+            }
+    
+            .couse_text {
+                h3 {
+                    @include heading_4;
+                    padding-top: 16px;
+                }
+            }
+        }
+    }
+}
+
+.course_slider_top .topPrevarrow {
+    width: 39px;
+    height: 39px;
+    background: #FAF9FD;
+    @include radius(50%);
+    text-align: center;
+    line-height: 39px;
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    @include transform_y;
+    @include transition;
+    z-index: 10;
+    color: rgba(0, 0, 0, 0.3);
+}
+.course_slider_top .topNextarrow {
+    width: 39px;
+    height: 39px;
+    background: #FAF9FD;
+    @include radius(50%);
+    text-align: center;
+    line-height: 39px;
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    @include transform_y;
+    @include transition;
+    z-index: 10;
+    color: rgba(0, 0, 0, 0.3);
+}
+.course_slider_top .topPrevarrow:hover,
+.course_slider_top .topNextarrow:hover{
+    color: #CF0000;
+    cursor: pointer;
+}
+/* =================================
+    Populer Courses department End
+=================================== */

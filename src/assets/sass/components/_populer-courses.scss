@@ -1,0 +1,303 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+        Populer Courses Area Satrt
+=================================== */
+#alamin{
+    padding-bottom: 40px;
+    overflow: hidden;
+    .populer_courses{
+        background: #FAF9FD;
+        border-radius: 35px;
+        padding: 0 20px 18px;
+    }
+}
+
+.section_heading {
+    text-align: center;
+
+    h2 {
+        @include section_heading;
+        padding-top: 46px;
+    }
+
+    p {
+        @include section_pera;
+        padding-bottom: 58px;
+    }
+}
+
+.course_slider_top {
+    z-index: 5;
+    .draggable {
+        padding-left: 0 !important;
+    }
+}
+
+// Tab 
+.course_mix_btn {
+    button{
+        border: none;
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        background: transparent;
+        span{
+            padding-top: 14px;
+            padding-bottom: 14px;
+            border-bottom: 3px solid transparent;
+        }
+    }
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 33px;
+    .slick-current{
+        span{
+            display: inline-block;
+            transition: all linear .3s;
+            color: #CF0000;
+            border-bottom: 3px solid #CF0000;
+        }
+    }
+}
+
+
+.course_single_item {
+    margin: 0 8px;
+    margin-bottom: 16px;
+    position: relative;
+    background: #FFFFFF;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    overflow: hidden;
+    .course_image {
+        border-radius: 25px 25px 0 0;
+        -webkit-border-radius: 25px 25px 0 0;
+        -moz-border-radius: 25px 25px 0 0;
+        -ms-border-radius: 25px 25px 0 0;
+        -o-border-radius: 25px 25px 0 0;
+    }
+
+    .course_text {
+        padding-top: 20px;
+        padding-right: 14px;
+        padding-left: 17px;
+        padding-bottom: 28px;
+        border-radius: 0px 0px 25px 25px;
+
+        h6 {
+            font-family: Ruposhi Bangla Unicode;
+            font-size: 14px;
+            line-height: 23px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.2px;
+            color: #DF6812;
+        }
+
+        a {
+            color: $heading2_3;
+            font-family: Hind Siliguri;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 32px;
+            letter-spacing: 0.20000000298023224px;
+        }
+
+        ul {
+            li {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                color: #787A82;
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+                margin-bottom: 25px;
+
+                i {
+                    color: #FFAE4F;
+                }
+            }
+        }
+
+        p {
+            color: $heading2_3;
+            font-family: Ruposhi Bangla Unicode;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+            letter-spacing: 0.20000000298023224px;
+        }
+    }
+}
+
+.prevarrow {
+    width: 39px;
+    height: 39px;
+    background: #FAF9FD;
+    @include radius(50%);
+    text-align: center;
+    line-height: 39px;
+    position: absolute;
+    left: -10px;
+    @include transform_y;
+    @include transition;
+    top: 47%;
+    box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+    z-index: 10;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.nextarrow {
+    width: 39px;
+    height: 39px;
+    background: #FAF9FD;
+    @include radius(50%);
+    text-align: center;
+    line-height: 39px;
+    position: absolute;
+    right: -10px;
+    @include transform_y;
+    @include transition;
+    top: 47%;
+    box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+    z-index: 10;
+    color: rgba(0, 0, 0, 0.3);
+}
+.prevarrow:hover,
+.nextarrow:hover{
+    color: #CF0000;
+}
+.course_catagory_item.slick-slide {
+    opacity: 0;
+	visibility: hidden;
+    .prevarrow:hover,
+    .nextarrow:hover{
+        display: none;
+    }
+}
+.course_catagory_item.slick-slide.slick-current.slick-active{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.story_text_slider{
+    position: relative;
+    margin-top: 95px;
+}
+
+.counte_item {
+    margin: 0 18px;
+    padding: 35px;
+    @include radius(35px);
+    h4 {
+        background: #ffffff;
+        background: -webkit-linear-gradient(15deg, #ED8345, #CF0000);
+        background-clip: border-box;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0.20000000298023224px;
+        padding-top: 20px;
+    }
+
+    h3 {
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0.20000000298023224px;
+        padding-top: 16px;
+        padding-bottom: 12px;
+    }
+
+    p {
+        color: #605F62;
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0.20000000298023224px;
+        max-width: 257px;
+        padding-bottom: 4px;
+    }
+}
+.counte_item1{
+    background: linear-gradient(230.46deg, #FFF7EB 0%, rgba(255, 247, 235, 0.3) 100%);
+}
+.counte_item2{
+    background: linear-gradient(229.2deg, #E9F9FC -2.12%, rgba(233, 249, 252, 0.3) 100%);
+    h4{
+        background: -webkit-linear-gradient(15deg, #11A7CA, #11A7CA);
+        background-clip: border-box;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.counte_item3{
+    background: linear-gradient(229.38deg, #F7FCE7 2.83%, rgba(247, 252, 231, 0.3) 96.18%);
+    h4{
+        background: -webkit-linear-gradient(15deg, #66902B, #66902B);
+        background-clip: border-box;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+.coursprevarrow {
+    width: 39px;
+    height: 39px;
+    background: #FAF9FD;
+    @include radius(50%);
+    text-align: center;
+    line-height: 39px;
+    position: absolute;
+    left: -6px;
+    @include transform_y;
+    top: 50%;
+    z-index: 10;
+    color: #CF0000;
+}
+
+.coursnextarrow {
+    width: 39px;
+    height: 39px;
+    background: #FAF9FD;
+    @include radius(50%);
+    text-align: center;
+    line-height: 39px;
+    position: absolute;
+    right: -6px;
+    @include transform_y;
+    top: 50%;
+    z-index: 10;
+    color: #CF0000;
+}
+/* =================================
+        Populer Courses Area End
+=================================== */

@@ -1,0 +1,26 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Desktop-27 আপনার ব্যক্তিগত তথ্য শুরু 
+=================================== */
+form.student_form{
+    .form_heading{
+        padding-top: 26px;
+        padding-bottom: 20px;
+        h3{
+            color: $heading2_3;
+            font-family: Hind Siliguri;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 33px;
+            letter-spacing: 0.20000000298023224px;
+        }
+    }
+}
+.course_fee_box.student_form{
+    margin-top: 67px!important;
+}
+/* =================================
+    Desktop-27 আপনার ব্যক্তিগত তথ্য শেষ 
+=================================== */

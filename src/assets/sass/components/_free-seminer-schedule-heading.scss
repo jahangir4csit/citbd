@@ -1,0 +1,36 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Free Seminer Schedule Area Start
+=================================== */
+#instructors_teachers.free_seminer_schedule{
+    padding-bottom: 0;
+    .facilities_heading{
+        p{
+            padding-bottom: 0;
+        }
+    }
+}
+.seminer_schedule{
+    padding: 0;
+    background: transparent;
+    padding-bottom: 50px;
+}
+.prev_semi_video_heading{
+    h2{
+        @include heading_2;
+        margin-bottom: 54px;
+    }
+}
+#seminar .seminar_content .text_main{
+    width: 90%;
+}
+#previous_seminer_video{
+    .overly_icon{
+        opacity: 1;
+    }
+}
+/* =================================
+    Free Seminer Schedule Area End
+=================================== */

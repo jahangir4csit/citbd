@@ -1,0 +1,66 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Desktop-31 ওয়াও! আপনি কোর্সে যে সেবা গুলো সম্পূর্ন ফ্রিতে পাচ্ছেন? শুরু 
+=================================== */
+#course_free_facilities{
+    margin-top: 53px;
+    .course_free_facilities_heading{
+        padding-bottom: 34px;
+        h3{
+            @include heading_3;
+            span{
+                color: $cf0000;
+            }
+        }
+    }
+}
+.course_free_facilities_item{
+    background: $white;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    padding: 16px 35px;
+    position: relative;
+    margin-bottom: 23px;
+    h4{
+        @include heading_4;
+        text-align: left
+    }
+    p{
+        @include pera;
+        padding-top: 8px;
+        padding-bottom: 11px;
+    }
+    a{
+        color: $ff7e31;
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0.20000000298023224px;
+        svg{
+            margin-bottom: 4px;
+            margin-right: 8px;
+        }
+    }
+}
+.course_free_facilities_btn{
+    margin-top: 85px;
+    padding-bottom: 90px;
+    text-align: right;
+    a{
+        @include common_btn;
+        padding: 14px 48px;
+        color: $white;
+        font-family: Hind Siliguri;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0.20000000298023224px;
+    }
+}
+
+/* =================================
+    Desktop-31 ওয়াও! আপনি কোর্সে যে সেবা গুলো সম্পূর্ন ফ্রিতে পাচ্ছেন? শেষ  
+=================================== */

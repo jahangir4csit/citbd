@@ -1,0 +1,92 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    More Facilities Area Satrt
+=================================== */
+#more_facilities {
+    padding-top: 46px;
+    padding-bottom: 46px;
+}
+
+.more_facilities_item {
+    padding: 65px 35px;
+    margin-bottom: 27px;
+    @include radius(33px);
+
+    h3 {
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0.20000000298023224px;
+        padding-top: 16px;
+        padding-bottom: 12px;
+    }
+
+    p {
+        color: #605F62;
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0.20000000298023224px;
+        max-width: 257px;
+        padding-bottom: 4px;
+    }
+}
+
+.more_facilities_item_1 {
+    background: linear-gradient(229.38deg, #F7FCE7 2.83%, rgba(247, 252, 231, 0.3) 96.18%);
+}
+
+.more_facilities_item_2 {
+    background: linear-gradient(229.69deg, #FDF3FD 3.63%, rgba(253, 243, 253, 0.29) 98.73%);
+}
+
+.more_facilities_item_3 {
+    background: linear-gradient(229.2deg, #E9F9FC -2.12%, rgba(233, 249, 252, 0.3) 100%);
+}
+
+.more_facilities_item_4 {
+    background: linear-gradient(230.46deg, #FFF7EB 0%, rgba(255, 247, 235, 0.3) 100%);
+}
+
+.more_facilities_item_5 {
+    background: linear-gradient(232.39deg, #EDFBF2 1.93%, rgba(237, 251, 242, 0.3) 97.41%);
+}
+
+.more_facilities_item_6 {
+    background: linear-gradient(227.39deg, #FDF2F2 2.74%, rgba(253, 242, 242, 0.3) 97.4%);
+}
+
+.more_facilities_btn {
+    a {
+        color: $white;
+        background: $linear;
+        width: 145px;
+        padding: 10px 0;
+        font-family: Hind Siliguri;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        @include radius(5px);
+        margin-top: 38px;
+    }
+}
+
+/* =================================
+    More Facilities Area End
+=================================== */
+
+
+/* =================================
+    Student Feedback Area Start
+=================================== */
+
+/* =================================
+    Student Feedback Area End
+=================================== */

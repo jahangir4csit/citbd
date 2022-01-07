@@ -1,0 +1,67 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Free Seminer Schedule Area Start
+=================================== */
+#thankyou{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thankyou_text{
+    text-align: center;
+    max-width: 370px;
+    position: absolute;
+    h2{
+color: $heading2_3;
+font-family: Hind Siliguri;
+font-size: 60px;
+font-weight: 600;
+line-height: 72px;
+letter-spacing: 0.20000000298023224px;
+text-align: center;
+
+    }
+    h4{
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        span{
+            color: $theme_color;
+        }
+    }
+    p{
+        @include pera;
+        color: $pgc_pera_color;
+        text-align: center;
+        padding-top: 13px;
+        padding-bottom: 24px;
+    }
+    .thankyou_btn{
+        margin-top: 52px;
+        a{
+            width: 159px;
+            text-align: center;
+            padding: 8px 0;
+            margin: 0 6px;
+            border: 1px solid transparent;
+            @include common_btn;
+            transition: all linear .3s;
+            &:hover{
+                color:$theme_color;
+                background: transparent;
+                border: 1px solid $theme_color;
+            }
+        }
+    }
+}
+/* =================================
+    Free Seminer Schedule Area End
+=================================== */

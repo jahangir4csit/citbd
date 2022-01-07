@@ -1,0 +1,37 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Desktop-27 শুরু
+=================================== */
+.pagination_main{
+    ul{
+        li{
+            margin: 0 5px;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 20px;
+                right: -6px;
+                top: 4px;
+                background: #1F1E1E;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(27deg);
+            }
+            &:last-child::after{
+                display: none;
+            }
+            a.active{
+                color: #1F1E1E;
+            }
+        }
+    }
+}
+.pagination_main{
+    margin-top: 90px;
+}
+/* =================================
+    Desktop-27 শেষ
+=================================== */

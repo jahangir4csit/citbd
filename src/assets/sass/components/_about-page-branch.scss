@@ -1,0 +1,41 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/*=======================================
+About Page Branch  Part Start
+======================================= */
+#branch{
+	margin-top: 109px;
+	h2{
+		@include heading_2;
+		margin-bottom: 43px;
+	}
+}
+.branch_item{
+	background: #FDF2F2;
+    border-radius: 30px;
+	padding: 53px;
+	h4{
+	color: $black;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 33px;
+	letter-spacing: 0.20000000298023224px;
+	padding-bottom: 14px;
+	}
+	p{
+	color: $pera;
+	font-family: Hind Siliguri;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 32px;
+	letter-spacing: 0.20000000298023224px;
+	}
+}
+.branch:nth-child(even) .branch_item{
+	background: #E9F9FC;
+}
+
+/*=======================================
+About Page Branch  Part End
+======================================= */

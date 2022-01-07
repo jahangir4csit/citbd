@@ -1,0 +1,10 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/* About Page Organogram Part Start */
+#organogram{
+    padding-top: 50px;
+    > h2{
+        text-align: center;
+    }
+}
+/* About Page Organogram Part End */

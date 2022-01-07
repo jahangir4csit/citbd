@@ -1,0 +1,57 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+/* =================================
+    Virtual Area Satrt
+=================================== */
+#virtual {
+    padding-bottom: 63px;
+    .virtual {
+        @include radius(24px);
+        position: relative;
+
+        .virtual_text {
+            position: absolute;
+            left: 0;
+            top: 5%;
+            @include radius(0 16px 16px 0);
+            background: rgba(255, 255, 255, 0.86);
+            padding: 14px 29px;
+
+            h6 {
+                color: #CF0000;
+                font-family: Hind Siliguri;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 33px;
+                letter-spacing: 0.20000000298023224px;
+            }
+
+            p {
+                color: #605F62;
+                font-family: Hind Siliguri;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0.20000000298023224px;
+            }
+        }
+        .virtual_eye{
+            width: 106px;
+            height: 106px;
+            @include radius(20px);
+            background: rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(4px);
+            position: absolute;
+            @include transform_x;
+            bottom: 5%;
+            a{
+                padding: 19px;
+                display: block;
+            }
+        }
+    }
+}
+
+/* =================================
+    Virtual Area End
+=================================== */

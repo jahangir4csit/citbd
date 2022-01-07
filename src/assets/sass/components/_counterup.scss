@@ -1,0 +1,30 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Counter Up Area Satrt
+=================================== */
+.counter_up_item{
+    background: #FAF9FD;
+    @include radius(15px);
+    text-align: center;
+    padding: 30px 15px;
+    h5{
+        color: #CF0000;
+        font-family: Ruposhi Bangla Unicode;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 45px;
+    }
+    p{
+        color: $heading2_3;
+        font-family: Ruposhi Bangla Unicode;
+        font-weight: bold;
+        // font-size: 14px;
+        font-size: 13px;
+        line-height: 21px;
+    }
+}
+/* =================================
+    Counter Up Area End
+=================================== */

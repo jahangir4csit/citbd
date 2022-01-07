@@ -1,0 +1,74 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Desktop-31 ওয়াও! আপনি কোর্সে যে সেবা গুলো সম্পূর্ন ফ্রিতে পাচ্ছেন? শুরু 
+=================================== */
+.course_free_facilities_item{
+    position: relative;
+    &:hover .hover_play_video{
+        opacity: 1;
+        visibility: visible;
+        left: 102px;
+    }
+}
+.hover_play_video{
+    margin-left: 100px;
+    width: 350px;
+    background: $white;
+    box-shadow: 4px 4px 150px rgba(0, 0, 0, 0.39);
+    border-radius: 22px;
+    padding: 18px 25px 26px 33px;
+    position: absolute;
+    z-index: 100;
+    top: -19px;
+    left: 95px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .3s;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 25px;
+        background: #ffffff;
+        border-radius: 6px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 30px;
+        left: -10px;
+    }
+    .video_img{
+        position: relative;
+    }
+    .play_check{
+        display: flex;
+        align-items: center;
+        margin-bottom: 17px;
+        input{
+            width: 28px;
+            height: 28px;
+            border: 1px solid #D4D4D4;
+            &:focus{
+                box-shadow: none;
+            }
+            &:checked{
+                background-color: $cf0000;
+                border-color: $cf0000;
+            }
+        }
+        
+        h3{
+            color: $cf0000;
+            font-family: Ruposhi Bangla Unicode;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 33px;
+            letter-spacing: 0.20000000298023224px;
+            padding-left: 23px;
+        }
+    }
+}
+/* =================================
+    Desktop-31 ওয়াও! আপনি কোর্সে যে সেবা গুলো সম্পূর্ন ফ্রিতে পাচ্ছেন? শেষ  
+=================================== */

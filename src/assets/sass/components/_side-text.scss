@@ -1,0 +1,25 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+        Side Text Area Start
+=================================== */
+.side_text{
+    width: 300px;
+    position: fixed;
+    top: 41%;
+    right: -111px;
+    z-index: 999;
+    transform: rotate(-90deg);
+    a{
+        color: #CF0000;
+        font-family: Hind Siliguri;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.2px;
+    }
+}
+/* =================================
+        Side Text Area End
+=================================== */

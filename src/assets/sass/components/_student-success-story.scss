@@ -1,0 +1,22 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Student Success Story Area Satrt
+=================================== */
+#student_success{
+    padding-bottom: 46px;
+}
+.student_story_item{
+    @include radius(20px);
+    overflow: hidden;
+    a{
+        display: block;
+    }
+}
+
+/* =================================
+    Student Success Story Area End
+=================================== */
+
+

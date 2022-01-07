@@ -1,0 +1,81 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Contact Us Satrt
+=================================== */
+#office_1{
+padding-top: 44px;
+padding-bottom: 78px;
+}
+#office_2{
+    padding-bottom: 132px;
+}
+.office_map{
+    position: relative;
+    svg{
+        position: absolute;
+        top: 22px;
+        left: -22px;
+    }
+    iframe{
+        min-height: 349px;
+        border-radius: 19px;
+    }
+}
+.office_address_main{
+    padding-left: 30px;
+    .address_text{
+        h3{
+            @include heading_3;
+            color: $theme_color;
+            padding-bottom: 3px;
+        }
+        ul{
+            li{
+                color: $e342B27;
+                font-family: Hind;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 25px;
+                letter-spacing: 0px;
+            }
+        }
+        p{
+            padding-top: 4px;
+            a{
+               color: $theme_color;
+                font-family: Hind;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 25px;
+                letter-spacing: 0px; 
+            }
+        }
+    }
+    .phone_number{
+        margin-top: 34px;
+        h3{
+            @include heading_3;
+            padding-bottom: 3px;
+        }
+        ul{
+            li{
+                a{
+                    color: $e342B27;
+                    font-family: Hind;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 25px;
+                    letter-spacing: 0px;
+                }
+            }
+        }
+    }
+}
+.divider{
+    padding: 38px;
+}
+/* =================================
+    Contact Us End
+=================================== */

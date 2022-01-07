@@ -1,0 +1,65 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/*=======================================
+About Page Office and training  Part Start
+======================================= */
+#office_and_traning{
+    margin-top: 81px;
+    h2{
+        @include heading_2;
+        margin-bottom: 55px;
+    }
+}
+.office_and_traning_slider{
+    margin-top: 14px;
+    .slick-slide{
+        padding: 0 7px;
+    }
+}
+.trainingPrevArrow.slick-arrow {
+	position: absolute;
+	top: 50%;
+	left: -18px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 40px;
+	height: 40px;
+	background: #ffffff;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 18px;
+	font-weight: 600;
+	-webkit-transition: all linear .3s;
+	transition: all linear .3s;
+	cursor: pointer;
+    z-index: 100;
+}
+.trainingNextArrow.slick-arrow {
+	position: absolute;
+	top: 50%;
+	right: -18px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 40px;
+	height: 40px;
+	background: #ffffff;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 18px;
+	font-weight: 600;
+	-webkit-transition: all linear .3s;
+	transition: all linear .3s;
+	cursor: pointer;
+}
+.trainingPrevArrow.slick-arrow:hover,
+.trainingNextArrow.slick-arrow:hover {
+	color: #FB312E;
+}
+/*=======================================
+About Page Office and training  Part End
+======================================= */

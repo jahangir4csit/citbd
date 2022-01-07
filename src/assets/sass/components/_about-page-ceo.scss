@@ -1,0 +1,128 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/*==================================
+        About Page CEO Part Start
+================================== */
+#ceo {
+    margin-top: 93px;
+}
+#ceo > .container > .row:nth-child(even){
+    flex-direction: row-reverse;
+    padding-top: 93px;
+}
+.ceo_img{
+    border-radius: 35px;
+    overflow: hidden;
+}
+.ceo_text {
+    h3 {
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38px;
+        letter-spacing: 0.20000000298023224px;
+    }
+
+    h4 {
+        color: #cf0000;
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0.20000000298023224px;
+        padding-top: 14px;
+        padding-bottom: 15px;
+    }
+
+    p {
+        color: $pera;
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0.20000000298023224px;
+
+        span {
+            display: block;
+            padding: 14px 0;
+        }
+    }
+}
+
+.orjon {
+    padding-top: 70px;
+
+    h3 {
+        color: black;
+        font-family: Hind Siliguri;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0.20000000298023224px;
+        padding-bottom: 15px;
+    }
+
+    ul {
+        li {
+            display: inline-block;
+            margin-right: 45px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.follow_on {
+    h3 {
+        color: black;
+        font-family: Hind Siliguri;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0.20000000298023224px;
+        padding-bottom: 22px;
+        padding-top: 21px;
+    }
+
+    ul {
+        li {
+            display: inline-block;
+            margin-right: 11px;
+            text-align: center;
+            a{
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                display: block;
+                line-height: 42px;
+                font-size: 21px;
+                color: $white;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            .facebook {
+                background: #395185;
+            }
+
+            .instagram {
+                background: linear-gradient(150deg, #774ADF 3.9%, #9748BE 14.95%, #BD4697 30.43%, #D8447A 44.65%, #E94369 57%, #EF4363 66.1%, #EF545E 72.21%, #F08053 84.3%, #F2C141 100%);
+            }
+            .linkedin {
+                background: #0A66C2;
+            }
+            .twitter {
+                background: #55ACEE;
+            }
+        }
+    }
+}
+
+
+/*==================================
+        About Page CEO Part Start
+================================== */

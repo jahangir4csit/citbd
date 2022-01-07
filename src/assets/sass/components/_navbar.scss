@@ -1,0 +1,156 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+        Navbar Area End
+=================================== */
+.back_to_top{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $theme_color;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .3s;
+}
+.back_to_top a{
+    display: block;
+    line-height: 33px;
+    color: $white;
+    font-size: 25px;
+}
+.back_to_top.back_btn_show{
+    opacity: 1;
+    visibility: visible;
+    bottom: 30px;
+}
+
+#navbar {
+    padding: 25px 0;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    transition: all linear .3s;
+    @include transform_x;
+    z-index: 999;
+}
+
+.main_menu {
+    li.nav-item {
+        margin-right: 48px;
+
+        a.nav-link {
+            color: #1F1E1E !important;
+            font-family: Hind Siliguri;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0.20000000298023224px;
+            text-align: center;
+
+        }
+    }
+}
+
+
+.navbar_btn {
+    a {
+        font-family: Hind Siliguri;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        letter-spacing: 0.20000000298023224px;
+        @include common_btn;
+        padding: 13px 19px;
+
+        img {
+            padding-right: 9px;
+        }
+    }
+}
+
+/*sm_menu===*/
+.offcanvas-start {
+	width: 80vw;
+}
+.sm_menu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: transparent;
+    z-index: 1000;
+}
+.offcanvas_menu{
+    padding: 35px 0;
+    position: relative;
+    .bars{
+        position: absolute;
+        left: 2%;
+        top: 50%;
+        transform: translateY(-50%);
+        a{
+            &:focus{
+                box-shadow: 0 0 0 .25rem transparent;
+            }
+        }
+    }
+    .logo{
+        text-align: center;
+    }
+}
+
+.offcanvas-body{
+    .offcanvas_main_items{
+        .main_menu{
+            align-items: center;
+            li{
+                margin-bottom: 10px;
+                margin-right: 0; 
+            }
+        }
+    }
+}
+.btn-close:focus {
+	box-shadow: 0 0 0 .25rem transparent;
+}
+
+#navbar.nav_sticky{
+    position: fixed;
+    top: 0;
+    background: $white;
+    padding: 8px 0;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+    animation: sticky .5s linear;
+    transition: all linear .3s;
+}
+.sm_menu.nav_sticky{
+    position: fixed;
+    top: 0;
+    background: $white;
+    padding: 8px 0;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+    animation: sticky .5s linear;
+    transition: all linear .3s;
+}
+.sm_menu.nav_sticky .offcanvas_menu{
+    padding: 10px 0;
+    transition: all linear .3s;
+}
+@keyframes sticky {
+    0%{
+        top: -100px;
+    }
+
+    100%{
+        top: 0px;
+    }
+}
+/* =================================
+        Navbar Area End
+=================================== */

@@ -1,0 +1,160 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Free Seminar Area Satrt
+=================================== */
+#seminar{
+    padding-top: 109px;
+    padding-bottom: 46px;
+}
+.seminar{
+    padding: 68px 48px;
+    background: rgba(253, 242, 242, 0.5);
+    @include radius(35px);
+}
+.seminar_content{
+    h2{
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 54px;
+        letter-spacing: 0.20000000298023224px;
+    }
+    >p{
+        color: #605F62;
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.20000000298023224px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        max-width: 435px;
+    }
+    h3{
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+    ul{
+        li{
+            // width: 450px;
+            @include radius(21px);
+            background: linear-gradient(to right, #FFECE0 40%, #ffffff 60%);
+            
+            display: flex;
+            align-items: center;
+            margin-bottom: 9px;
+            @include transition;
+            &:hover{
+                background: linear-gradient(to right, $ff7e31 34%, #ffffff 60%);
+            }
+            &:hover .date{
+                
+                color: $white;
+            }
+            &:hover .date span{
+                color: $white;
+            }
+            .date{
+                width: 20%;
+                color: $black;
+                font-family: Ruposhi Bangla Unicode;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 32px;
+                text-align: center;
+                letter-spacing: 0.2px;
+                width: 118px;
+                @include transition;
+                span{
+                    color: $ff7e31;
+                    font-size: 20px;
+                    display: block;
+                    font-weight: 400;
+                    @include transition;
+                    transition: all linear .3s;
+                }
+            }
+            .text_main{
+                background: $white;
+                border: 1px solid $ECDCDC;
+                @include radius(21px);
+                width: 80%;
+                padding: 17px 14px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .text{
+                    h4{
+                        color: $heading2_3;
+                        font-family: Hind Siliguri;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 32px;
+                        letter-spacing: 0.20000000298023224px;
+                    }
+                    p{
+                        color: #605F62;
+                        font-family: Ruposhi Bangla Unicode;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 29px;
+                        letter-spacing: 0.20000000298023224px;
+                                              
+                    }
+                }
+                .join_btn{
+                    a{
+                        color: #CF0000;
+                        font-family: Ruposhi Bangla Unicode;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 32px;
+                        letter-spacing: 0.2px;
+                        border: 0.5px solid #CF0000;
+                        background: $white;
+                        text-align: center;
+                        @include radius(10px);
+                        width: 80px;
+                        @include transition;
+                    }
+                }
+            }
+        }
+    }
+    .seminar_btn{
+        padding-top: 22px;
+        a{
+            @include common_btn;
+            font-family: Hind Siliguri;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            padding: 10px 18px;
+        }
+        
+    }
+}
+.free_seminar_img{
+    text-align: right;
+    position: relative;
+    .seminar_dots{
+        position: absolute;
+        bottom: -73px;
+        right: -12px;
+        z-index: -1;
+    }
+}
+/* =================================
+    Free Seminar Area End
+=================================== */

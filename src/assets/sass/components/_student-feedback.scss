@@ -1,0 +1,192 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Student Feedback Area Satrt
+=================================== */
+.student_feedback_item {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 19px;
+    padding: 20px 25px;
+
+    ul {
+        position: relative;
+
+        li {
+            display: flex;
+            // justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .student_pic {
+                width: 50px;
+                height: 50px;
+                @include radius(50%);
+                margin-right: 10px;
+            }
+
+            .student_name {
+                h5 {
+                    color: #000000;
+                    font-family: Hind Siliguri;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: 0.20000000298023224px;
+
+                    img {
+                        margin: 0 5px;
+                        display: inline-block;
+                    }
+
+                    span {
+                        color: #A9A9A9;
+                    }
+
+                    span.star {
+                        i {
+                            color: #FF7E31;
+                        }
+                    }
+                }
+
+                h6 {
+                    color: #7E7E7E;
+                    font-family: Hind Siliguri;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 24px;
+                    letter-spacing: 0.2px;
+                }
+            }
+        }
+
+        .student_social_link {
+            width: 35px;
+            height: 35px;
+            @include radius(50%);
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    p {
+        max-width: 487px;
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.20000000298023224px;
+    }
+}
+.feedback_item{
+    margin: 3px 17px;
+}
+.studentPrevArrow.slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: -3px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: $white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 10;
+    transition: all linear .3s;
+    box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    &:hover{
+        color: $red;
+    }
+}
+.studentNextArrow.slick-arrow {
+    position: absolute;
+    top: 50%;
+    right: -3px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: $white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    font-weight: 600;
+    transition: all linear .3s;
+    box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    &:hover{
+        color: $red;
+    }
+}
+
+
+
+.recommends {
+    padding-top: 16px;
+    padding-bottom: 54px;
+
+    h4 {
+        color: $black;
+        font-family: Hind Siliguri;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0.2750000059604645px;
+
+        img {
+            margin: 0 8px;
+        }
+
+        span {
+            color: #A9A9A9;
+        }
+    }
+}
+
+.excellent {
+    margin-top: 27px;
+    margin-bottom: 113px;
+    color: $black;
+    font-family: Hind Siliguri;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0.2750000059604645px;
+    h4{
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0.2750000059604645px;
+        span.star {
+            color: #FF7E31;
+            margin: 0 7px;
+        }
+        span.number {
+            font-weight: 400;
+            margin: 0 7px;
+        }
+        span.review {
+            color: #a9a9a9;
+            margin: 0 7px;
+            font-weight: 400;
+        }
+    }
+}
+
+/* =================================
+    Student Feedback Area End
+=================================== */

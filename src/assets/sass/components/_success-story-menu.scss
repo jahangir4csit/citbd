@@ -1,0 +1,98 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Success Story Menu Area Start
+=================================== */
+.success_menu {
+    padding-bottom: 72px;
+    ul{
+        display: inline-block;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        li{
+            display: inline-block;
+            text-align: center;
+            margin-right: 60px;
+            &:last-child{
+                margin-right: 0;
+                
+            }
+            a{
+                display: inline-block;
+            }
+            // padding: 0 75px;
+            .company_nav_tab {
+                display: block;
+                color: $heading2_3;
+                font-family: Hind Siliguri;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 33px;
+                letter-spacing: 0.20000000298023224px;
+                text-align: center;
+                padding: 10px 0;
+                position: relative;
+                @include transition;
+                cursor: pointer;
+                max-width: 236px;
+                margin: 0 auto;
+            }
+            .company_nav_tab.active {
+                color: #ff4200;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 3px;
+                    background: #CF0000;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.success_item{
+    box-shadow: 0px 39px 37px #F4F4F4;
+    border-radius: 10px;
+    overflow: hidden;
+    a{
+        display: block;
+    }
+}
+.ss_pagination{
+    margin-top: 63px;
+    margin-bottom: 80px;
+    ul{
+        li{
+            width: 32px;
+            height: 32px;
+            background: #FFFFFF;
+            border-radius: 4px;
+            text-align: center;
+            margin: 0 4px;
+            a.page-link{
+                line-height: 32px;
+                padding: 0;
+                color: #232222;
+                border: 1px solid #E3E3E3;
+            }
+            a.page-link:hover{
+                box-shadow: none;
+                background: $cf0000;
+                color: #fff;
+                 border: 1px solid $cf0000;
+            }
+            a.page-link:focus{
+                box-shadow: none;
+                background: $cf0000;
+                color: #fff;
+                 border: 1px solid $cf0000;
+            }
+        }
+    }
+}
+/* =================================
+    Success Story Menu Area End
+=================================== */

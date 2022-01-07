@@ -1,0 +1,641 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+Course-Landing Left (7 column) Overviwe  Area Start
+=================================== */
+#pg_course_overviwe{
+    padding-top: 53px;
+    padding-bottom: 68px;
+}
+.course_overviwe_text{
+    ul{
+        li{
+            color: $pgc_li_color;
+            font-family: Ruposhi Bangla Unicode;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0em;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            span{
+                width: 20px;
+                height: 20px;
+                margin-right: 11px;
+            }
+        }
+    }
+    ul.huda{
+        li{
+            color: $pgc_li_color;
+            font-family: Ruposhi Bangla Unicode;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0em;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            span{
+                width: 20px;
+                height: 20px;
+                margin-right: 11px;
+            }
+        }
+    }
+    h2{
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 54px;
+        letter-spacing: 0.20000000298023224px;
+        padding-bottom: 16px;
+
+    }
+    p{
+        color: $pgc_pera_color;
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        span{
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+    }
+}
+
+/* */
+.pgc_curriculum{
+    margin-top: 90px;
+    background: #FAF9FD;
+    border-radius: 25px;
+    padding: 40px;
+    h3{
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 38px;
+        letter-spacing: 0.20000000298023224px;
+        padding-bottom: 30px;
+    }
+    >ul{
+        
+        > li{
+            position: relative;
+            padding-left: 25px;
+            padding-bottom: 30px;
+            &::after{
+                position: absolute;
+                content: '';
+                width: 3px;
+                height: 100%;
+                background: #E9E7ED;
+                left: 0;
+                top: 0;
+                bottom: 0;
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #E9E7ED;
+                left: -10px;
+                top: 0;
+                bottom: 0;
+            }
+            &:last-child::after{
+                display: none;
+            }
+            > h4{
+                color: $black;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: 0.20000000298023224px;
+                text-align: left;
+                padding-bottom: 14px;
+                span{
+                    color: #FF7E31;
+                }
+            }
+        }
+    }
+}
+
+.pgc_inner_text{
+    ul{
+        li{
+            color: #605F62;
+            font-family: Ruposhi Bangla Unicode;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.20000000298023224px;
+            display: flex;
+            align-items: center;
+            span{
+                display: inline-block;
+                margin-right: 15px;
+                padding-bottom: 4px;
+            }
+        }
+    }
+}
+
+.pgc_software{
+    padding: 56px 69px;
+    background: #FAF9FD;
+    border-radius: 25px;
+    margin-top: 49px;
+    h3{
+        padding-bottom: 38px;
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38px;
+        letter-spacing: 0.20000000298023224px;
+    }
+}
+.pgc_item{
+    ul{
+        li{
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            .pgcs_icon{
+                min-width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                text-align: center;
+                margin-right: 20px;
+                overflow: hidden;
+            }
+            .pgcs_text{
+                p{
+                    color: #605F62;
+                    font-family: Hind Siliguri;
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 33px;
+                    letter-spacing: 0.20000000298023224px;
+                }
+            }
+        }
+    }
+}
+/* এই কোর্স যাদের জন্য */
+.pgc_for_whom{
+    padding: 52px 53px;
+    background: #FEF9F9;
+    border-radius: 25px;
+    margin-top: 45px;
+    h3{
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38px;
+        letter-spacing: 0.20000000298023224px;
+        padding-bottom: 30px;
+    }
+}
+.pgcf_whom_item{
+    padding-top: 58px;
+    padding-bottom: 34px;
+    margin-bottom: 19px;
+    text-align: center;
+    background: $white;
+    // background: red;
+    border-radius: 30px;
+    .pgcf_whom_item_icon{
+        width: auto;
+        margin: 0 auto;
+    }
+    .pgcf_whom_item_text{
+        p{
+            color: $heading2_3;
+            font-family: Hind Siliguri;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 33px;
+            letter-spacing: 0.20000000298023224px;
+            padding-top: 22px;
+        }
+    }  
+}
+.pgcf_btn{
+    padding-top: 31px;
+    a{
+        color: #CF0000;
+        font-family: Hind Siliguri;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0.20000000298023224px;
+    }
+}
+/* আপনি যেখানে কাজ করতে পারেন*/
+.pg_marketplace{
+    padding: 58px 50px;
+    background: rgba(248, 252, 234, 0.6);
+    border-radius: 25px;
+    margin-top: 45px;
+    h2{
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38px;
+        letter-spacing: 0.20000000298023224px;
+        padding-bottom: 43px;
+    }
+    .marketplace_item{
+        padding-top: 18px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 24px;
+        background: $white;
+        border-radius: 30px;
+        margin-bottom: 27px;
+        .icon{
+            text-align: center;
+            h5{
+                text-align: center;
+                color: $heading2_3;
+                font-family: Hind Siliguri;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 32px;
+                letter-spacing: 0.20000000298023224px;
+            }
+        }
+        .text{
+            p{
+                color: $pgc_pera_color;
+                font-family: Ruposhi Bangla Unicode;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0em;
+                padding-top: 21px;
+            }
+        }
+    }
+}
+
+/* ==========যে সকল পজিশনে জব করতে পারবেন========== */
+.pg_job{
+    margin-top: 50px;
+    background: rgba(255, 247, 235, 0.6);
+    border-radius: 25px;
+    padding: 56px 59px;
+    h3{
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38px;
+        letter-spacing: 0.20000000298023224px;
+        padding-bottom: 47px;
+    }
+}
+.job_item{
+    ul{
+        li{
+            color: $pera;
+            font-family: Ruposhi Bangla Unicode;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 33px;
+            letter-spacing: 0.20000000298023224px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            svg{
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+
+
+/*======== শিক্ষার্থিদের আরও যে সকল সুবিধা দিয়ে থাকি ========*/
+.pgs_facilitice{
+    margin-top: 97px;
+    h3{
+        max-width: 644px;
+        margin: 0 auto;
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 54px;
+        letter-spacing: 0.20000000298023224px;
+        padding-bottom: 30px;
+    }
+}
+.pg_more_facilities_item {
+    padding: 35px;
+    margin-bottom: 27px;
+    @include radius(33px);
+
+    h3 {
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0.20000000298023224px;
+        padding-top: 16px;
+        padding-bottom: 12px;
+    }
+
+    p {
+        color: #605F62;
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0.20000000298023224px;
+        max-width: 257px;
+        padding-bottom: 4px;
+    }
+}
+
+.pg_more_facilities_item_1 {
+    background: linear-gradient(229.38deg, #F7FCE7 2.83%, rgba(247, 252, 231, 0.3) 96.18%);
+}
+
+.pg_more_facilities_item_2 {
+    background: linear-gradient(229.69deg, #FDF3FD 3.63%, rgba(253, 243, 253, 0.29) 98.73%);
+}
+
+.pg_more_facilities_item_3 {
+    background: linear-gradient(230.46deg, #FFF7EB 0%, rgba(255, 247, 235, 0.3) 100%);
+}
+
+.pg_more_facilities_item_4 {
+    background: linear-gradient(232.39deg, #EDFBF2 1.93%, rgba(237, 251, 242, 0.3) 97.41%);
+}
+
+.pg_more_facilities_item_5 {
+    background: linear-gradient(229.2deg, #E9F9FC -2.12%, rgba(233, 249, 252, 0.3) 100%);
+}
+
+.pg_more_facilities_item_6 {
+    background: linear-gradient(227.39deg, #FDF2F2 2.74%, rgba(253, 242, 242, 0.3) 97.4%);
+}
+
+/*======= আমাদের স্টুডেন্টদের করা কিছু প্রজেক্ট ========*/
+.pgs_project{
+    margin-top: 59px;
+    h2{
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 54px;
+        letter-spacing: 0.20000000298023224px;
+        padding-bottom: 48px;
+        }
+}
+.pgp_slide_item{
+    overflow: hidden;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.pgs_project .slick-dots{
+    display: flex;
+    justify-content: center;
+    li{
+        margin: 5px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #EBEBEB;
+        cursor: pointer;
+        transition: all linear .3s;
+        &:hover{
+            background: #CF0000;
+        }
+        button{
+            display: none;
+        }
+    }
+    li.slick-active{
+        background: #CF0000;
+    }
+}
+
+/* ========  আমাদের স্টুডেন্টদের ফিডব্যাক ========*/
+.pg_student_feedback{
+    padding-top: 91px;
+    h2{
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 54px;
+        letter-spacing: 0.20000000298023224px;
+        padding-bottom: 42px;
+    }
+}
+.pg_student_feedback .pg_feedback_item{
+    margin-right: 9px;
+    margin-left: 9px;
+}
+.pg_student_feedback .student_feedback_item ul .student_social_link {
+	width: 24px;
+	height: 24px;
+	right: -16px;
+	top: 0;
+}
+.pg_student_feedback .studentPrevArrow.slick-arrow {
+    left: -11px;
+}
+.pg_student_feedback .studentNextArrow.slick-arrow {
+    right: -11px;
+
+}
+/* =================================
+Course-Landing Left (7 column) Course Overviwe  Area End
+=================================== */
+
+
+
+/* =================================
+Course-Landing right side bar Position Stiky  Area Start
+=================================== */
+.pg_succsess_story{
+    background: #FAF9FD;
+    border-radius: 28px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 33px;
+    padding-right: 20px;
+    .heading{
+        padding-bottom: 10px;
+        h4{
+            color: $heading2_3;
+            display: flex;
+            justify-content: space-between;
+            font-family: Hind Siliguri;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 33px;
+            letter-spacing: 0.20000000298023224px;
+            span{
+                a{
+                    color: #CF0000;
+                    font-family: Ruposhi Bangla Unicode;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: 0.20000000298023224px;
+                }
+            }
+        }
+    }
+}
+
+    .pg_succsess_img_slider{
+        .pg_slide_item{
+            border-radius: 10px;
+            overflow: hidden;
+            a{
+                display: block;
+            }
+        }
+        .slick-dots{
+            margin-top: 27px;
+            display: flex;
+            justify-content: center;
+            li{
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                margin: 0 3px;
+                background: #EBEBEB;
+                cursor: pointer;
+                button{
+                    display: none;
+                }
+            }
+            li.slick-active{
+                background: $theme_color;
+            }
+        }
+}
+
+.pg_wait{
+    margin-top: 29px;
+    background: #FBF2F2;
+    border-radius: 26px;
+    padding: 23px 33px;
+    >h3{
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38px;
+        letter-spacing: 0.20000000298023224px;
+    }
+    >p{
+        color: $pgc_pera_color;
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+        padding-top: 13px;
+        padding-bottom: 33px;
+    }
+    .join_offline{
+        background: url(../images/course-landing/pg-wait-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 25px;
+        overflow: hidden;
+        padding: 30px;
+        margin-bottom: 20px;
+        transition: all linear .5s;
+        &:hover{
+            background: $white;
+            transition: all linear .5s;
+        }
+        &:hover h4{
+            color: $heading2_3;
+        }
+        &:hover p{
+            color: $heading2_3;
+        }
+        &:hover a{
+            background:  $btn_linear;
+            color: $white;
+        }
+        h4{
+            color: $white;
+            font-family: Hind Siliguri;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 33px;
+            letter-spacing: 0.20000000298023224px;
+            transition: all linear .3s;
+        }
+        p{
+            color: $white;
+            font-family: Ruposhi Bangla Unicode;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 26px;
+            letter-spacing: 0.20000000298023224px;
+            padding-top: 9px;
+            padding-bottom: 17px;
+            transition: all linear .3s;
+        }
+        a{
+            color: #CF0000;
+            font-family: Hind Siliguri;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 32px;
+            letter-spacing: 0.20000000298023224px;
+            border-radius: 10px;
+            background: $white;
+            text-align: center;
+            line-height: 59px;
+            padding: 0 63px;
+            transition: all linear .3s;
+        }
+    }
+    .wait_btn{
+        a{
+            display: block;
+            border: 1px solid #CF0000;
+            border-radius: 10px;
+            padding: 15px 0;
+            color: #CF0000;
+            font-family: Hind Siliguri;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 32px;
+            letter-spacing: 0.20000000298023224px;
+            text-align: center;
+        }
+    }
+}
+/* =================================
+Course-Landing right side bar Position Stiky  Area End
+=================================== */

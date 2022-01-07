@@ -1,0 +1,90 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+
+/*===================================
+Blog Dtails Sidebar Page Area Start
+================================== */
+.author{
+    background: #FAF9FD;
+    border-radius: 32px;
+    text-align: center;
+    padding-top: 72px;
+    padding-bottom: 28px;
+    margin-top: 12px;
+    position: relative;
+    label{
+        position: absolute;
+        top: 31px;
+        left: -16px;
+        z-index: 10;
+    }
+    .image{
+        width: 162px;
+        height: 162px;
+        border-radius: 50%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .text{
+        h4{
+            @include common_h4($heading2_3, $hind, 22px, 33px, 600);
+            padding-top: 26px;
+            padding-bottom: 7px;
+        }
+        h5{
+            @include common_h4($ff7e31, $ruposhi, 16px, 26px, 400);
+            padding-bottom: 10px;
+        }
+        p{
+            @include common_pera(#605F62, 12px, 19px);
+            max-width: 306px;
+            margin: 0 auto;
+            padding-bottom: 26px;
+        }
+    }
+    .icon{
+        text-align: center;
+        a{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            i{
+                color: $white;
+                line-height: 30px;
+                font-size: 16px;
+            }
+        }
+        a.facebook{
+            background: #395185;
+        }
+        a.instagram{
+            background: linear-gradient(#D24ADF, #9748BE, #BD4697, #D8447A, #E94369, #EF4363, #EF545E, #F08053, #F2C141);
+        }
+        a.linkedin{
+            background: #0A66C2;
+        }
+        a.twitter{
+            background: #55ACEE;
+        }
+    }
+}
+.coures_discount{
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 43px;
+    a{
+        display: block;
+    }
+}
+.seminar_discount{
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 30px;
+    a{
+        display: block;
+    }
+}
+/*===================================
+Blog Dtails Sidebar Page Area End
+================================== */

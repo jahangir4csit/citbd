@@ -1,0 +1,197 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Footer Area Satrt
+=================================== */
+#footer{
+    padding-top: 83px;
+    background: #403532;
+    position: relative;
+    .footer_left{
+        position: absolute;
+        left: 60px;
+        top: 57px;
+    }
+    .footer_right{
+        position: absolute;
+        right: 60px;
+        top: 57px;
+    }
+}
+
+.footer_heading{
+    max-width: 674px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 96px;
+    h2{
+        color: $white;
+        font-family: Hind Siliguri;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 54px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;        
+    }
+    p{
+        color: #BAB5AD;
+        font-family: Hind;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;   
+        padding-top: 5px;
+        padding-bottom: 39px;     
+    }
+    .footer_btn{
+        text-align: center;
+        a{
+            width: 177px;
+            @include radius(6px);
+            border: 1px solid $white;
+            color: $white;
+            font-family: Hind Siliguri;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 54px;
+            text-align: center;
+            letter-spacing: 0.2px;  
+            @include transition;
+            margin: 0 10px;
+            &:hover{
+            border:1px solid transparent;
+            @include common_btn;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+            }         
+        }
+    }
+}
+
+.footer_item_1{
+    h5{
+        color: $white;
+        font-family: Hind Siliguri;
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0.20000000298023224px;
+        margin-bottom: 22px;             
+    }
+    ul{
+        li{
+            display: flex;
+            margin-bottom: 26px;
+            &:last-child{
+            align-items: center;
+            }
+            .footer_icon{
+                min-width: 31px;
+                height: 31px;
+                background: #695C49;
+                @include radius(50%);
+                text-align: center;
+                i{
+                    line-height: 31px;
+                    font-size: 14px;
+                    color: $white;
+                    opacity: 0.7;
+                }
+            }
+            .footer_text{
+                color: $white;
+                font-family: Hind;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 14px;
+                margin-left: 12px;
+                letter-spacing: 0.20000000298023224px; 
+                opacity: 0.7;              
+                span{
+                    display: block;
+                    line-height: 24px;
+                    a{
+                        color: $white;
+                        font-family: Hind;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 14px;
+                        letter-spacing: 0.20000000298023224px; 
+                        opacity: 0.7;                      
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer_item_2{
+    h5{
+        color: $white;
+        font-family: Hind Siliguri;
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0.20000000298023224px;
+        margin-bottom: 22px;   
+    }
+    ul{
+        li{
+            margin-bottom: 17px;
+            a{
+                color: $white;
+                font-family: Hind;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 14px;
+                letter-spacing: 0.20000000298023224px; 
+                opacity: 0.7;                
+            }
+        }
+    }
+}
+.copy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.103);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .copy_text{
+
+        p{
+            color: $white;
+            text-align: center;
+            font-family: Hind;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.20000000298023224px;                  
+        }
+    }
+    .copy_social_link{
+
+        text-align: right;
+        a{
+            width: 39px;
+            height: 39px;
+            text-align: center;
+            line-height: 39px;
+            @include radius(50%);
+            border: 1px solid rgba(255, 255, 255, 0.342);
+            color: $white;
+            font-size: 16px;
+            background: transparent;
+            margin-left: 12px;
+        }
+    }
+}
+/* =================================
+    Footer Area Satrt
+=================================== */

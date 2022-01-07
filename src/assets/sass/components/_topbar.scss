@@ -1,0 +1,27 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+/* =================================
+        Topbar Area Satrt
+=================================== */
+#topbar{
+    background: $linear;
+    padding: 7px 0;
+}
+.topbar_text{
+    a{
+        color: #fff;
+        font-family: Hind Siliguri;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 27px;
+        text-align: left;
+        margin-right: 83px;
+        span{
+            margin-right: 10px;
+        }
+    }
+}
+
+/* =================================
+        Topbar Area End
+=================================== */

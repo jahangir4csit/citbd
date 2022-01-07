@@ -1,0 +1,127 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+
+/*===================================
+        Blog Dtails Page Area Start
+================================== */
+#blog_dtails_main {
+    padding-top: 63px;
+
+    .blog_dtails {
+        border-bottom: 0.5px solid rgba(126, 126, 126, 0.5);
+        padding-bottom: 21px;
+
+        .heading {
+            h3 {
+                color: $theme_color;
+                font-family: Hind Siliguri;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 25px;
+            }
+
+            h2 {
+                color: $heading2_3;
+                font-family: Hind Siliguri;
+                font-size: 35px;
+                font-weight: 600;
+                line-height: 49px;
+                max-width: 603px;
+                padding-top: 10px;
+                padding-bottom: 5px;
+            }
+
+            p {
+                color: #414141;
+                font-family: Hind Siliguri;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                padding-bottom: 53px;
+
+                span {
+                    font-family: Ruposhi Bangla Unicode;
+                    margin-left: 50px;
+                }
+            }
+        }
+        .image {
+            border-radius: 25px;
+            overflow: hidden;
+            margin-bottom: 43px;
+        }
+    
+        .dtails {
+            p {
+                @include common_pera($pgc_pera_color, 16px, 24px);
+    
+                span {
+                    padding-top: 28px;
+                }
+            }
+    
+            h4 {
+                @include common_h4(#232222, $ruposhi, 18px, 30px, 700);
+                padding-top: 28px;
+                padding-bottom: 13px;
+            }
+        }
+    }
+}
+
+.tag_share{
+    margin-top: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .tag{
+        label{
+            @include common_h4(#232222,$hind, 18px, 24px, 600);
+            padding-right: 5px;
+        }
+        a{
+            @include common_h4(#414141,$hind, 16px, 24px, 500);
+            padding: 8px 23px;
+            background: $white;
+            box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.06);
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+    }
+    .share{
+        label{
+            @include common_h4(#232222,$hind, 18px, 24px, 600);
+            padding-right: 5px;
+        }
+        a{
+            font-size: 17px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            background: $white;
+            margin-left: 15px;
+            box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.06);
+            .twitter{
+                color: #33CCFF;
+            }
+            .facebook{
+                color: #3C5A99;
+            }
+            .linkedin{
+                color: #007AB9;
+            }
+            .pinterest{
+                color: #FF0000;
+            }
+        }
+    }
+}
+.related_post{
+    padding-bottom: 143px;
+}
+/*===================================
+        Blog Dtails Page Area End
+================================== */

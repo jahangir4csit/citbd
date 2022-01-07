@@ -1,0 +1,52 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Prectical Project Area Satrt
+=================================== */
+#practical_project{
+    padding-top: 46px;
+    padding-bottom: 46px;
+}
+.practical_project{
+    padding: 43px 40px;
+    @include radius(35px);
+    background: #F6F5FB;
+}
+.practical_project_img{
+    position: relative;
+    z-index: 1;
+    .prectical_dots{
+        position: absolute;
+        top: -43px;
+        right: -40px;
+        z-index: -1;
+    }
+}
+.practical_project_text{
+    max-width: 517px;
+    h2{
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.2px;
+        padding-bottom: 16px;
+    }
+    p{
+        color: $pera;
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.20000000298023224px;
+        span{
+            display: block;
+            padding: 20px 0;
+        }
+    }
+}
+/* =================================
+    Prectical Project Area End
+=================================== */

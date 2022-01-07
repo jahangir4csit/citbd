@@ -1,0 +1,92 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Desktop-25 Course Fee Box Satrt
+=================================== */
+.extra_facilities_item{
+    transition: all linear .3s;
+    margin-bottom: 18px;
+    &:hover{
+        border: 3px solid #FFEBEB;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+    }
+    background: $white;
+    border: 3px solid $white;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    padding: 14px 20px;
+    display: flex;
+    .extra_facilities_check{
+        margin-right: 22px;
+        input.form-check-input{
+            width: 28px;
+            height: 28px;
+            background: $white;
+            border: 1px solid $D4D4D4;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+        input.form-check-input:checked{
+            background-color: $FFF1F1;
+            border: 1px solid $cf0000;
+            box-sizing: border-box;
+            border-radius: 8px;
+            position: relative;
+        }
+        input.form-check-input:checked::after{
+            font-family: "FontAwesome";
+            position: absolute;
+            content: "\f00c";
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $cf0000;
+        }
+        input.form-check-input:focus{
+            box-shadow: none;
+        }
+        // input.form-check-input:checked[type="checkbox"] {
+        //     background-image: url(/images/desktop-25/check.png);
+        //     background: url(../../images/desktop-25/check.png);
+        //     background: red;
+        //     background-position: center;
+        //     background-repeat: no-repeat;
+        // }
+        /* <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 7L5.5 11L15.5 1" stroke="#CF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>*/
+    }
+    .extra_facilities_text{
+        position: relative;
+        &:hover .hover_play_video{
+            opacity: 1;
+            visibility: visible
+        }
+        h4{
+            @include heading_4;
+            color: $cf0000;
+            display: flex;
+            justify-content: space-between;
+            span{
+                @include pera_font_size_12($ff7e31);
+            }
+        }
+        p{
+            @include pera_font_size_12($pgc_pera_color);
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        a{
+            @include pera_font_size_12($ff7e31);
+            svg{
+                margin-right: 8px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
+
+/* =================================
+    Desktop-25 Course Fee Box End
+=================================== */

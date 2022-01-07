@@ -1,0 +1,15 @@
+.navbar-light .navbar-toggler-icon{
+    background-image: url('../images/toggole_menu.png');
+}
+.navbar-toggler,
+.navbar-toggler:focus, 
+.navbar-toggler:active
+.navbar-toggler:change{
+    outline: 0!important;
+    box-shadow: none!important;
+    border:0!important
+}
+.navbar-toggler{
+    border: none!important;
+    box-shadow: none!important;
+}

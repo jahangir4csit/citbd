@@ -1,0 +1,30 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/*===================================
+        Blog news menu Start
+================================== */
+.blog_news{
+    margin-top: 102px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.06);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 18px 0;
+}
+.blog_menu{
+    ul{
+        li{
+            display: inline-block;
+            margin-right: 30px;
+            a{
+                color: $pera;
+                font-family: Hind Siliguri;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0.20000000298023224px;
+            }
+        }
+    }
+}
+/*===================================
+        Blog news menu End
+================================== */

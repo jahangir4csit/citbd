@@ -1,0 +1,137 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+professional Graphic banner Area Start
+=================================== */
+#profe_graphic_banner{
+    padding-top: 154px;
+    padding-bottom: 53px;
+    position: relative;
+    position: 1;
+    .pink_shape{
+        position: absolute;
+        left: 0;
+        top: -2%;
+        z-index: -2;
+    }
+    .white_dots {
+        position: absolute;
+        left: 8%;
+        top: 35%;
+        z-index: -1;
+    }
+    .yellow_shape{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+.pg_banner_text{
+    h4{
+        font-family: Hind Siliguri;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0.20000000298023224px;
+        @include text_linear_color(24deg);
+    }
+    h1{
+        color: $heading2_3;
+        font-family: Hind Siliguri;
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 54px;
+        letter-spacing: 0.20000000298023224px;
+        padding-top: 7px;
+        padding-bottom: 16px;
+    }
+    ul{
+        display: flex;
+        li{
+            width: 136px;
+            color: $black;
+            font-family: Hind Siliguri;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.20000000298023224px;
+            text-align: center;
+            margin-right: 8px;
+            padding: 16px 0;
+            border-radius: 20px;
+            border: 0.5px solid rgba(0, 0, 0, 0.1);
+            span{
+                display: block;
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: 0.11224490404129028px;
+                text-align: center;
+            }
+        }
+    }
+    > p{
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.20000000298023224px;
+        padding-top: 15px;
+        padding-bottom: 36px;
+    }
+    .pg_banner_btn{
+        a{
+            @include common_btn;
+            font-size: 18px;
+            line-height: 32px;
+            padding: 15px 44px;
+            margin-right: 13px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .stars{
+        p{
+            color: $reviwe_color;
+            font-family: Ruposhi Bangla Unicode;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0em;
+            padding-top: 17px;
+            i{
+                color: $star_color;
+                margin-right: 5px;
+            }
+            span{
+                letter-spacing: 0.20000000298023224px;
+                margin-left: 70px;
+            }
+        }
+    }
+}
+
+.pg_banner_img_col{
+    position: relative;
+    .yellow_dots_right{
+        position: absolute;
+        top: 9%;
+        right: -13%;
+    }
+    .yellow_dot_left{
+        position: absolute;
+        bottom: 10%;
+        left: -4px;
+        z-index: -1;
+    }
+}
+.pg_banner_img{
+    border-radius: 35px;
+    overflow: hidden;
+}
+/* =================================
+professional Graphic banner Area ENd
+=================================== */

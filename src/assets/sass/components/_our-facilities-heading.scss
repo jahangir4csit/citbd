@@ -1,0 +1,39 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+Our facilities Heading Area Start
+=================================== */
+#navbar.our_facilies_navbar{
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+}
+#our_facilities{
+    padding-top: 125px;
+}
+.facilities_heading{
+    h2{
+        color: #CF0000;
+        font-family: Hind Siliguri;
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 54px;
+        letter-spacing: 0.20000000298023224px;
+        padding-bottom: 29px;
+    }
+    p{
+        color: $pgc_pera_color;
+        font-family: Ruposhi Bangla Unicode;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.20000000298023224px;
+        padding-bottom: 59px;
+        max-width: 857px;
+        
+    }
+}
+/* =================================
+Our facilities Heading Area End
+=================================== */

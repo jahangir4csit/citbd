@@ -1,0 +1,52 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    ভর্তির নিয়মাবলী শুরু 
+=================================== */
+.pgc_overviwe_text{
+    background: linear-gradient(127.39deg, #FFFFFF 2.83%, #FFE7E7 81.54%);
+    border: 9px solid #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+    border-radius: 39px;
+    padding: 40px 65px;
+    .admission_rules{
+        h3{
+            color: $heading2_3;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 33px;
+            letter-spacing: 0.20000000298023224px;
+            padding-bottom: 13px;
+        }
+        p{
+            color: $pera;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            padding-bottom: 13px;
+            max-width: 930px;
+        }
+    }
+    ul{
+        li{
+            color: $pgc_li_color;
+            font-family: Ruposhi Bangla Unicode;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0em;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            span{
+                width: 20px;
+                height: 20px;
+                margin-right: 11px;
+            }
+        }
+    }
+}
+/* =================================
+    ভর্তির নিয়মাবলী শেষ  
+=================================== */

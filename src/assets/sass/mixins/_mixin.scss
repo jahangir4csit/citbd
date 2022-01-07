@@ -1,0 +1,168 @@
+@mixin section_heading {
+    color: #1F1E1E;
+    font-family: Hind Siliguri;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 54px;
+}
+@mixin heading_2 {
+    color: #1F1E1E;
+    font-family: Hind Siliguri;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.20000000298023224px;
+}
+
+@mixin heading_3 {
+color: #1F1E1E;
+font-family: Hind Siliguri;
+font-size: 22px;
+font-weight: 600;
+line-height: 33px;
+letter-spacing: 0.20000000298023224px;
+}
+
+@mixin heading_4 {
+    color: $heading2_3;
+    font-family: Hind Siliguri;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+}
+@mixin common_h4($color,$ff, $fs, $lih, $fwe){
+    color: $color;
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fwe;
+    line-height: $lih;
+}
+@mixin heading_5($color) {
+    color: $color;
+    font-family: Hind Siliguri;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+
+@mixin section_pera {
+    color: #605F62;
+    font-family: Ruposhi Bangla Unicode;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    padding-top: 15px;
+    max-width: 586px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@mixin pera {
+    color: #605F62;
+    font-family: Ruposhi Bangla Unicode;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+
+}
+@mixin peragraph{
+    color: #605F62;
+    font-family: Ruposhi Bangla Unicode;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.20000000298023224px;
+}
+@mixin pera_fs_12{
+    color: $pgc_pera_color;
+    font-family: Ruposhi Bangla Unicode;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;   
+}
+@mixin pera_font_size_12($color){
+    color: $color;
+    font-family: Ruposhi Bangla Unicode;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;   
+}
+@mixin common_pera($color, $fs, $lih){
+    color: $color;
+    font-family: Ruposhi Bangla Unicode;
+    font-size: $fs;
+    font-weight: 400;
+    line-height: $lih;
+    letter-spacing: 0.20000000298023224px;   
+}
+@mixin common_btn {
+    font-family: Hind Siliguri;
+    color: #fff;
+    background: linear-gradient(214.38deg, #FF8079 -2.24%, #FF1E1E 59.38%);
+    border-radius: 10px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+@mixin transition {
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+@mixin radius($br) {
+    border-radius: $br;
+    -webkit-border-radius: $br;
+    -moz-border-radius: $br;
+    -ms-border-radius: $br;
+    -o-border-radius: $br;
+}
+@mixin border_radius_and_middle{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+@mixin transform_x {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+@mixin transform_y {
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+@mixin text_linear_color($deg) {
+        background: #ffffff;
+        background: -webkit-linear-gradient($deg, #ff1e1e 35%, #ff8079 100%);
+        background-clip: border-box;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}

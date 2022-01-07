@@ -1,0 +1,179 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+
+/*===================================
+        All Blog Area Start
+================================== */
+#all_blog {
+    margin-top: 53px;
+    position: relative;
+// For positioning Victor image Start
+.dots_victor {
+    position: absolute;
+    left: 60px;
+    bottom: 0;
+}
+// For positioning Victor image End
+
+    .all_blog_heading {
+        h3 {
+            @include heading_3;
+            padding-bottom: 29px;
+        }
+    }
+}
+
+#all_blog {
+    .all_blog_menu {
+        padding-bottom: 40px;
+
+        ul {
+            display: flex;
+            gap: 40px;
+            border-bottom: 0.5px solid #D4D4D4;
+        }
+
+        li {
+            text-align: center;
+
+            button {
+                color: #605F62;
+                font-family: Hind Siliguri;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 26px;
+                letter-spacing: 0.20000000298023224px;
+                background: transparent;
+                border: transparent;
+                display: inline-block;
+                position: relative;
+            }
+
+            button.active::after {
+                content: "";
+                position: absolute;
+                width: 95%;
+                height: 3px;
+                background: $cf0000;
+                left: 50%;
+                bottom: -1.5px;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+.all_blog_item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    background: $white;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    gap: 0 55px;
+    margin-bottom: 22px;
+    overflow: hidden;
+
+    .image {
+        flex-basis: 328px;
+    }
+
+    .text {
+        flex-basis: 702px;
+
+        h5 {
+            @include heading_5($ff7e31);
+
+            span {
+                color: $c9F9F9F;
+            }
+
+            span.date {
+                color: $c9F9F9F;
+                position: relative;
+                margin: 0 8px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -6px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 15px;
+                    width: 1px;
+                    background: $c9F9F9F;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -6px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 15px;
+                    width: 1px;
+                    background: $c9F9F9F;
+                }
+            }
+        }
+
+        h3 {
+            @include heading_3;
+            padding-top: 10px;
+            padding-bottom: 12px;
+        }
+
+        p {
+            color: $pgc_pera_color;
+            //styleName: Paragraph Normal / Small;
+            font-family: Ruposhi Bangla Unicode;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0.20000000298023224px;
+        }
+    }
+}
+
+.pagination_btn {
+    padding-top: 18px;
+    padding-bottom: 108px;
+
+    ul {
+        li {
+            margin: 0 8px;
+
+            a {
+                color: #838383;
+                font-family: Hind Siliguri;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 32px;
+                letter-spacing: 0.20000000298023224px;
+                width: 35px;
+                text-align: center;
+                padding: 0 11px;
+                border: 1.5px solid #D5D5D5;
+                transition: all linear .3s;
+
+                &:hover {
+                    background: $linear;
+                    color: $white;
+                    border: 1.5px solid $theme_color;
+                }
+            }
+
+            a.active {
+                background: $linear;
+                color: $white;
+                border: 1.5px solid $theme_color;
+            }
+        }
+    }
+}
+
+/*===================================
+        All Blog Area End
+================================== */

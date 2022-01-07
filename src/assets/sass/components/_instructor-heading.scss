@@ -1,0 +1,48 @@
+@import '../variables/variable';
+@import '../mixins/mixin';
+
+/* =================================
+    Instructor Heading Area Start
+=================================== */
+#instructors_teachers{
+    // padding-top: 95px;
+    margin-top: 200px;
+    padding-bottom: 63px;
+}
+.instructors_item{
+    height: 176px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    >.image{
+        margin-left: 50px;
+    }
+    >.text{
+        margin-left: 47px;
+        h4{
+            color: $black;
+            font-family: Ruposhi Bangla Unicode;
+            font-size: 45px;
+            font-weight: 700;
+            letter-spacing: 0em;
+            line-height: 31px;
+            span{
+                display: block;
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.instructors_item_1{
+    background: #FDF2F2;
+}
+.instructors_item_2{
+    background: #EDFBF2;
+}
+.instructors_item_3{
+    background: #FDF3FD;
+}
+/* =================================
+    Instructor Heading Area End
+=================================== */

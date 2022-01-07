@@ -1,0 +1,6701 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Ruposhi Bangla Unicode bold;
+  src: url(../ruposhi-bangla/RuposhiBanglaUnicodeBold.ttf);
+}
+
+@font-face {
+  font-family: Ruposhi Bangla Unicode;
+  src: url(../ruposhi-bangla/RuposhiBanglaUnicode.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+span {
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-family: Hind Siliguri;
+}
+
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  font-family: Ruposhi Bangla Unicode;
+}
+
+input,
+input:focus,
+button,
+button:focus {
+  outline: 0;
+}
+
+.main_container {
+  width: 84%;
+  margin-left: auto;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.video_icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.video_icon a {
+  display: block;
+}
+
+.video_icon a i {
+  color: #F03210;
+}
+
+/*Common Menu Slider Start*/
+.common_slider_class {
+  width: 100%;
+}
+
+div.success_menu ul.common_slider_class li .company_nav_tab {
+  font-size: 13px;
+  line-height: 21px;
+  text-align: left;
+  display: inline-block;
+}
+
+div.success_menu ul.common_slider_class li {
+  display: inline-block;
+  text-align: left;
+  margin-right: 0;
+}
+
+/*Common Menu Slider End*/
+/*=========All Common Css End=========*/
+/* =================================
+        Side Text Area Start
+=================================== */
+.side_text {
+  width: 300px;
+  position: fixed;
+  top: 41%;
+  right: -111px;
+  z-index: 999;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.side_text a {
+  color: #CF0000;
+  font-family: Hind Siliguri;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+}
+
+/* =================================
+        Side Text Area End
+=================================== */
+/* =================================
+        Topbar Area Satrt
+=================================== */
+#topbar {
+  background: linear-gradient(214.38deg, #FF8079 -2.24%, #FF1E1E 59.38%);
+  padding: 7px 0;
+}
+
+.topbar_text a {
+  color: #fff;
+  font-family: Hind Siliguri;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  margin-right: 83px;
+}
+
+.topbar_text a span {
+  margin-right: 10px;
+}
+
+/* =================================
+        Topbar Area End
+=================================== */
+/* =================================
+        Navbar Area End
+=================================== */
+.back_to_top {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FF1E1E;
+  text-align: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+
+  border: none;
+}
+
+.back_to_top svg {
+  line-height: 33px;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.back_to_top.back_btn_show {
+  opacity: 1;
+  visibility: visible;
+  bottom: 30px;
+}
+
+#navbar {
+  padding: 25px 0;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  z-index: 999;
+}
+
+.main_menu li.nav-item {
+  margin-right: 48px;
+}
+
+.main_menu li.nav-item a.nav-link {
+  color: #1F1E1E !important;
+  font-family: Hind Siliguri;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+}
+
+.navbar_btn a {
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0.20000000298023224px;
+  font-family: Hind Siliguri;
+  color: #fff;
+  background: linear-gradient(214.38deg, #FF8079 -2.24%, #FF1E1E 59.38%);
+  border-radius: 10px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 13px 19px;
+}
+
+.navbar_btn a img {
+  padding-right: 9px;
+}
+
+/*sm_menu===*/
+.offcanvas{
+  background-image: url('../images/home/offCanvasBg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.offcanvas-start {
+  width: 80vw;
+}
+
+.sm_menu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: transparent;
+  z-index: 1000;
+}
+
+.offcanvas_menu {
+  padding: 35px 0;
+  position: relative;
+}
+
+.offcanvas_menu .bars {
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.offcanvas_menu .bars a:focus {
+  -webkit-box-shadow: 0 0 0 .25rem transparent;
+          box-shadow: 0 0 0 .25rem transparent;
+}
+
+.offcanvas_menu .logo {
+  text-align: center;
+}
+
+.offcanvas-body .main_menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offcanvas-body .main_menu li {
+  margin-bottom: 10px;
+  margin-right: 0;
+}
+
+.btn-close:focus {
+  -webkit-box-shadow: 0 0 0 .25rem transparent;
+          box-shadow: 0 0 0 .25rem transparent;
+}
+
+#navbar.nav_sticky {
+  position: fixed;
+  top: 0;
+  background: #ffffff;
+  padding: 8px 0;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+  -webkit-animation: sticky .5s linear;
+          animation: sticky .5s linear;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.sm_menu.nav_sticky {
+  position: fixed;
+  top: 0;
+  background: #ffffff;
+  padding: 8px 0;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+  -webkit-animation: sticky .5s linear;
+          animation: sticky .5s linear;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.sm_menu.nav_sticky .offcanvas_menu {
+  padding: 10px 0;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+@-webkit-keyframes sticky {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes sticky {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+/* =================================
+        Navbar Area End
+=================================== */
+/* =================================
+        Banner Area Start
+=================================== */
+#banner {
+  background: url(../images/home//banner_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 142px;
+  padding-bottom: 203px;
+  position: relative;
+  z-index: 1;
+}
+
+#banner .red_shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#banner .green_shadow {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  z-index: -1;
+}
+
+.banner_text {
+  max-width: 469px;
+}
+
+.banner_text h5 {
+  font-family: Hind Siliguri;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.banner_text h5 span {
+  margin-right: 10px;
+}
+
+.banner_text h1 {
+  font-family: Hind Siliguri;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  position: relative;
+}
+
+.banner_text .dot_shape_banner {
+  position: absolute;
+  left: 3%;
+  top: 35%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.banner_text h1 span {
+  display: block;
+  font-size: 62px;
+  background: #ffffff;
+  background: -webkit-linear-gradient(15deg, #ff1e1e 35%, #ff8079 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 10px;
+}
+
+.banner_text > p {
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 22px;
+}
+
+.banner_text a {
+  font-family: Hind Siliguri;
+  color: #fff;
+  background: linear-gradient(214.38deg, #FF8079 -2.24%, #FF1E1E 59.38%);
+  border-radius: 10px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 13px 22px;
+  margin-right: 22px;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  text-align: center;
+}
+
+.banner_text a:hover {
+  background: #ffffff;
+  color: #CF0000;
+  padding-right: 36px;
+}
+
+.banner_text a:hover span {
+  opacity: 0;
+  visibility: hidden;
+  margin-right: 0;
+  margin-left: -5px;
+}
+
+.banner_text a:hover span.angle {
+  color: #CF0000;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.banner_text a span {
+  margin-right: 9px;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.banner_text ul {
+  margin-top: 38px;
+}
+
+.banner_text ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner_text ul li img {
+  margin-right: 10px;
+}
+
+.banner_text ul li p {
+  color: #342B27;
+  font-family: Hind Siliguri;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.banner_text ul li p span {
+  display: block;
+}
+
+.banner_img {
+  position: relative;
+  z-index: 1;
+}
+
+.banner_img .banner_pic_bg {
+  position: absolute;
+  left: -41%;
+  top: -48%;
+  z-index: -1;
+}
+
+.banner_img .plus {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.banner_img .dot_2 {
+  position: absolute;
+  right: 15px;
+  bottom: -50px;
+  z-index: -1;
+}
+
+.banner_img .dot_3 {
+  position: absolute;
+  left: -57px;
+  bottom: 70px;
+}
+
+.banner_img .banner_img_overly {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.banner_img .banner_img_overly .overly_text {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.banner_img .banner_img_overly .overly_text h4 {
+  color: #ffffff;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+}
+
+.overly_icon {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  text-align: center;
+  background: #fff;
+  animation: pulse 2s infinite;
+  -webkit-animation: pulse 2s infinite;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.overly_icon svg {
+  font-size: 20px;
+  margin-left: 4px;
+  color: #FF1E1E;
+  line-height: 41px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(241, 0, 0, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 30px rgba(241, 9, 9, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(241, 8, 8, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(241, 0, 0, 0.4);
+    box-shadow: 0 0 0 0 rgba(241, 0, 0, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 30px rgba(241, 9, 9, 0);
+    box-shadow: 0 0 0 30px rgba(241, 9, 9, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(241, 8, 8, 0);
+    box-shadow: 0 0 0 0 rgba(241, 8, 8, 0);
+  }
+}
+
+/* =================================
+        Banner Area End
+=================================== */
+/* =================================
+    Populer Courses department Satrt
+=================================== */
+#course_department {
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 100;
+}
+
+.course_slider_top .course_slider_item {
+  background: #ffffff;
+  height: 157px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 15px;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.06);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.06);
+  margin: 25px 12px;
+}
+
+.course_slider_top .course_slider_item a {
+  display: block;
+}
+
+.course_slider_top .course_slider_item a .couse_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 25px;
+}
+
+.course_slider_top .course_slider_item a .couse_text h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  padding-top: 16px;
+}
+.course_slider_top .slick-arrow svg{
+  vertical-align: middle;
+}
+.course_slider_top .slick-prev {
+  width: 39px;
+  height: 39px;
+  background: #FAF9FD;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  line-height: 39px;
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  z-index: 10;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.course_slider_top .slick-next {
+  width: 39px;
+  height: 39px;
+  background: #FAF9FD;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  line-height: 39px;
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  z-index: 10;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.course_slider_top .slick-next:before,
+.course_slider_top .slick-prev:before{
+  display: none;
+}
+
+.course_slider_top .slick-prev:hover,
+.course_slider_top .slick-next:hover {
+  color: #CF0000;
+  cursor: pointer;
+}
+
+/* =================================
+    Populer Courses department End
+=================================== */
+/* =================================
+        Populer Courses Area Satrt
+=================================== */
+#courseslide {
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+#courseslide .populer_courses {
+  background: #FAF9FD;
+  border-radius: 35px;
+  padding: 0 20px 18px;
+}
+
+.section_heading {
+  text-align: center;
+}
+
+.section_heading h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 54px;
+  padding-top: 46px;
+}
+
+.section_heading p {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  padding-top: 15px;
+  max-width: 586px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 58px;
+}
+
+.course_slider_top {
+  z-index: 5;
+}
+
+.course_slider_top .draggable {
+  padding-left: 0 !important;
+}
+
+.course_mix_btn {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 33px;
+}
+
+.course_mix_btn button {
+  border: none;
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  background: transparent;
+}
+
+.course_mix_btn button span {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: 3px solid transparent;
+}
+
+.course_mix_btn .slick-current span {
+  display: inline-block;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  color: #CF0000;
+  border-bottom: 3px solid #CF0000;
+}
+
+.course_single_item {
+  margin: 0 8px;
+  margin-bottom: 16px;
+  position: relative;
+  background: #FFFFFF;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.course_single_item .course_image {
+  border-radius: 25px 25px 0 0;
+  -webkit-border-radius: 25px 25px 0 0;
+  -moz-border-radius: 25px 25px 0 0;
+  -ms-border-radius: 25px 25px 0 0;
+  -o-border-radius: 25px 25px 0 0;
+}
+
+.course_single_item .course_text {
+  padding-top: 20px;
+  padding-right: 14px;
+  padding-left: 17px;
+  padding-bottom: 28px;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.course_single_item .course_text h6 {
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  line-height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.2px;
+  color: #DF6812;
+}
+
+.course_single_item .course_text a {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.course_single_item .course_text ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #787A82;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-bottom: 25px;
+}
+
+.course_single_item .course_text ul li svg {
+  color: #FFAE4F;
+}
+
+.course_single_item .course_text p {
+  color: #1F1E1E;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+}
+.course_category_slider{
+  overflow: hidden;
+}
+.prevarrow {
+  width: 39px;
+  height: 39px;
+  background: #FAF9FD;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  line-height: 39px;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  top: 47%;
+  -webkit-box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+          box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+  z-index: 99999999999;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.nextarrow {
+  width: 39px;
+  height: 39px;
+  background: #FAF9FD;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  line-height: 39px;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  top: 47%;
+  -webkit-box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+          box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+  z-index: 99999999999999;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.prevarrow svg,.nextarrow svg{
+  width: 100%!important;
+  display: inline-block;
+}
+.prevarrow:hover,
+.nextarrow:hover {
+  color: #CF0000;
+  cursor: pointer;
+}
+
+.course_catagory_item.slick-slide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.course_catagory_item.slick-slide .prevarrow:hover,
+.course_catagory_item.slick-slide .nextarrow:hover {
+  display: none;
+}
+
+.course_catagory_item.slick-slide.slick-current.slick-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.story_text_slider {
+  position: relative;
+  margin-top: 95px;
+}
+
+.counte_item {
+  margin: 0 18px;
+  padding: 35px;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+.counte_item h4 {
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 20px;
+}
+
+.counte_item h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+}
+
+.counte_item p {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.20000000298023224px;
+  max-width: 257px;
+  padding-bottom: 4px;
+}
+
+.counte_item1 {
+  background: linear-gradient(230.46deg, #FFF7EB 0%, rgba(255, 247, 235, 0.3) 100%);
+}
+
+.counte_item2 {
+  background: linear-gradient(229.2deg, #E9F9FC -2.12%, rgba(233, 249, 252, 0.3) 100%);
+}
+
+.counte_item2 h4 {
+  background: -webkit-linear-gradient(15deg, #11A7CA, #11A7CA);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.counte_item3 {
+  background: linear-gradient(229.38deg, #F7FCE7 2.83%, rgba(247, 252, 231, 0.3) 96.18%);
+}
+
+.counte_item3 h4 {
+  background: -webkit-linear-gradient(15deg, #66902B, #66902B);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.coursprevarrow {
+  width: 39px;
+  height: 39px;
+  background: #FAF9FD;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  line-height: 39px;
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  top: 50%;
+  z-index: 10;
+  color: #CF0000;
+}
+
+.coursnextarrow {
+  width: 39px;
+  height: 39px;
+  background: #FAF9FD;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  line-height: 39px;
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  top: 50%;
+  z-index: 10;
+  color: #CF0000;
+}
+
+/* =================================
+        Populer Courses Area End
+=================================== */
+/* =================================
+    Info Area Start
+=================================== */
+#info {
+  padding-bottom: 40px;
+}
+
+#info .coursprevarrow {
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#info .cournextarrow {
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#info .coursprevarrow:hover,
+#info .coursnextarrow:hover {
+  color: #cf0000;
+}
+
+/* =================================
+    Info Area End
+=================================== */
+/* =================================
+    Student Success Story Area Satrt
+=================================== */
+#student_success {
+  padding-bottom: 46px;
+}
+
+.student_story_item {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  overflow: hidden;
+}
+
+.student_story_item .videobtn {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+/* =================================
+    Student Success Story Area End
+=================================== */
+/* =================================
+    More Facilities Area Satrt
+=================================== */
+#more_facilities {
+  padding-top: 46px;
+  padding-bottom: 46px;
+}
+
+.more_facilities_item {
+  padding: 65px 35px;
+  margin-bottom: 27px;
+  border-radius: 33px;
+  -webkit-border-radius: 33px;
+  -moz-border-radius: 33px;
+  -ms-border-radius: 33px;
+  -o-border-radius: 33px;
+}
+
+.more_facilities_item h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+}
+
+.more_facilities_item p {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.20000000298023224px;
+  max-width: 257px;
+  padding-bottom: 4px;
+}
+
+.more_facilities_item_1 {
+  background: linear-gradient(229.38deg, #F7FCE7 2.83%, rgba(247, 252, 231, 0.3) 96.18%);
+}
+
+.more_facilities_item_2 {
+  background: linear-gradient(229.69deg, #FDF3FD 3.63%, rgba(253, 243, 253, 0.29) 98.73%);
+}
+
+.more_facilities_item_3 {
+  background: linear-gradient(229.2deg, #E9F9FC -2.12%, rgba(233, 249, 252, 0.3) 100%);
+}
+
+.more_facilities_item_4 {
+  background: linear-gradient(230.46deg, #FFF7EB 0%, rgba(255, 247, 235, 0.3) 100%);
+}
+
+.more_facilities_item_5 {
+  background: linear-gradient(232.39deg, #EDFBF2 1.93%, rgba(237, 251, 242, 0.3) 97.41%);
+}
+
+.more_facilities_item_6 {
+  background: linear-gradient(227.39deg, #FDF2F2 2.74%, rgba(253, 242, 242, 0.3) 97.4%);
+}
+
+.more_facilities_btn a {
+  color: #ffffff;
+  background: linear-gradient(214.38deg, #FF8079 -2.24%, #FF1E1E 59.38%);
+  width: 145px;
+  padding: 10px 0;
+  font-family: Hind Siliguri;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: 38px;
+}
+
+/* =================================
+    More Facilities Area End
+=================================== */
+/* =================================
+    Student Feedback Area Start
+=================================== */
+/* =================================
+    Student Feedback Area End
+=================================== */
+/* =================================
+    Student Feedback Area Satrt
+=================================== */
+.student_feedback_item {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 19px;
+  padding: 20px 25px;
+}
+
+.student_feedback_item ul {
+  position: relative;
+}
+
+.student_feedback_item ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.student_feedback_item ul li .student_pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 10px;
+}
+
+.student_feedback_item ul li .student_name h5 {
+  color: #000000;
+  font-family: Hind Siliguri;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.student_feedback_item ul li .student_name h5 img {
+  margin: 0 5px;
+  display: inline-block;
+  max-width: 23px;
+}
+
+.student_feedback_item ul li .student_name h5 span {
+  color: #A9A9A9;
+  margin-left: 5px;
+}
+
+.student_feedback_item ul li .student_name h5 span.star svg {
+  color: #FF7E31;
+  font-size: 14px;
+  margin-right: 3px;
+}
+
+.student_feedback_item ul li .student_name h6 {
+  color: #7E7E7E;
+  font-family: Hind Siliguri;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.student_feedback_item ul .student_social_link {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.student_feedback_item p {
+  max-width: 487px;
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.feedback_item {
+  margin: 3px 17px;
+}
+
+.studentPrevArrow.slick-arrow {
+  position: absolute;
+  top: 50%;
+  left: -3px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 10;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  -webkit-box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+          box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.studentPrevArrow.slick-arrow:hover {
+  color: #FB312E;
+}
+
+.studentNextArrow.slick-arrow {
+  position: absolute;
+  top: 50%;
+  right: -3px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  -webkit-box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+          box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.studentNextArrow.slick-arrow:hover {
+  color: #FB312E;
+}
+
+.recommends {
+  padding-top: 16px;
+  padding-bottom: 54px;
+}
+
+.recommends h4 {
+  color: #000000;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.2750000059604645px;
+}
+
+.recommends h4 img {
+  margin: 0 8px;
+}
+
+.recommends h4 span {
+  color: #A9A9A9;
+}
+
+.excellent {
+  margin-top: 27px;
+  margin-bottom: 113px;
+  color: #000000;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.2750000059604645px;
+}
+
+.excellent h4 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.2750000059604645px;
+}
+
+.excellent h4 span.star {
+  color: #FF7E31;
+  margin: 0 7px;
+  font-size: 19px;
+}
+.excellent h4 span.star svg {
+  margin-right: 5px;
+}
+.excellent h4 span.number {
+  font-weight: 400;
+  margin: 0 7px;
+}
+
+.excellent h4 span.review {
+  color: #a9a9a9;
+  margin: 0 7px;
+  font-weight: 400;
+}
+
+/* =================================
+    Student Feedback Area End
+=================================== */
+/* =================================
+    Virtual Area Satrt
+=================================== */
+#virtual {
+  padding-bottom: 63px;
+}
+
+#virtual .virtual{
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  position: relative;
+}
+#virtual .virtual img{
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+
+#virtual .virtual .virtual_text {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  border-radius: 0 16px 16px 0;
+  -webkit-border-radius: 0 16px 16px 0;
+  -moz-border-radius: 0 16px 16px 0;
+  -ms-border-radius: 0 16px 16px 0;
+  -o-border-radius: 0 16px 16px 0;
+  background: rgba(255, 255, 255, 0.86);
+  padding: 14px 29px;
+}
+
+#virtual .virtual .virtual_text h6 {
+  color: #CF0000;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+#virtual .virtual .virtual_text p {
+  color: #605F62;
+  font-family: Hind Siliguri;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+#virtual .virtual .virtual_eye {
+  width: 106px;
+  height: 106px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background: rgba(255, 255, 255, 0.35);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  bottom: 5%;
+}
+
+#virtual .virtual .virtual_eye a {
+  padding: 19px;
+  display: block;
+}
+
+/* =================================
+    Virtual Area End
+=================================== */
+/* =================================
+    Admission to all courses Area Satrt
+=================================== */
+.course_heading h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 26px;
+}
+
+.admission_item.course_single_item {
+  margin-bottom: 44px;
+  margin-left: 0;
+  margin-right: 0;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.admission_item.course_single_item:hover {
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+del {
+  color: #787A82;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.all_course_btn a {
+  color: #ffffff;
+  background: linear-gradient(15deg, #ff1e1e 35%, #ff8079 100%);
+  width: 145px;
+  padding: 10px 0;
+  font-family: Hind Siliguri;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* =================================
+    Admission to all courses Area End
+=================================== */
+/* =================================
+    Free Seminar Area Satrt
+=================================== */
+#seminar {
+  padding-top: 109px;
+  padding-bottom: 46px;
+}
+
+.seminar {
+  padding: 68px 48px;
+  background: rgba(253, 242, 242, 0.5);
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+.seminar_content h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.seminar_content > p {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  max-width: 435px;
+}
+
+.seminar_content h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.seminar_content ul li {
+  border-radius: 21px;
+  -webkit-border-radius: 21px;
+  -moz-border-radius: 21px;
+  -ms-border-radius: 21px;
+  -o-border-radius: 21px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #FFECE0), color-stop(60%, #ffffff));
+  background: linear-gradient(to right, #FFECE0 40%, #ffffff 60%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 9px;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.seminar_content ul li:hover {
+  background: -webkit-gradient(linear, left top, right top, color-stop(34%, #FF7E31), color-stop(60%, #ffffff));
+  background: linear-gradient(to right, #FF7E31 34%, #ffffff 60%);
+}
+
+.seminar_content ul li:hover .date {
+  color: #ffffff;
+}
+
+.seminar_content ul li:hover .date span {
+  color: #ffffff;
+}
+
+.seminar_content ul li .date {
+  width: 20%;
+  color: #000000;
+  font-family: Ruposhi Bangla Unicode;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  width: 118px;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.seminar_content ul li .date span {
+  color: #FF7E31;
+  font-size: 20px;
+  display: block;
+  font-weight: 400;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.seminar_content ul li .text_main {
+  background: #ffffff;
+  border: 1px solid #ECDCDC;
+  border-radius: 21px;
+  -webkit-border-radius: 21px;
+  -moz-border-radius: 21px;
+  -ms-border-radius: 21px;
+  -o-border-radius: 21px;
+  width: 80%;
+  padding: 17px 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seminar_content ul li .text_main .text h4 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.seminar_content ul li .text_main .text p {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.seminar_content ul li .text_main .join_btn a {
+  color: #CF0000;
+  font-family: Ruposhi Bangla Unicode;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  border: 0.5px solid #CF0000;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 80px;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.seminar_content .seminar_btn {
+  padding-top: 22px;
+}
+
+.seminar_content .seminar_btn a {
+  font-family: Hind Siliguri;
+  color: #fff;
+  background: linear-gradient(214.38deg, #FF8079 -2.24%, #FF1E1E 59.38%);
+  border-radius: 10px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-family: Hind Siliguri;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  padding: 10px 18px;
+}
+
+.free_seminar_img {
+  text-align: right;
+  position: relative;
+}
+.free_seminar_img, .free_seminar_img img{
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+
+.free_seminar_img .seminar_dots {
+  position: absolute;
+  bottom: -73px;
+  right: -12px;
+  z-index: -1;
+}
+
+/* =================================
+    Free Seminar Area End
+=================================== */
+/* =================================
+    12 years of glory Area Start
+=================================== */
+#glory {
+  padding-top: 46px;
+  padding-bottom: 46px;
+}
+
+.glory_text h5 {
+  color: #FB312E;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.glory_text h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 3px;
+}
+
+.glory_text p {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.glory_text p span {
+  padding: 10px 0;
+}
+
+.glory_text .glory_btn a {
+  font-family: Hind Siliguri;
+  color: #fff;
+  background: linear-gradient(214.38deg, #FF8079 -2.24%, #FF1E1E 59.38%);
+  border-radius: 10px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 18px;
+  padding: 14px 64px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.glory_text .glory_btn a:first-child {
+  margin-right: 14px;
+}
+
+.glory_text .glory_btn a:hover {
+  background: transparent;
+  color: #FB312E;
+}
+
+.glory_img {
+  padding-top: 41px;
+}
+
+/* =================================
+    12 years of glory Area End
+=================================== */
+/* =================================
+    Prectical Project Area Satrt
+=================================== */
+#practical_project {
+  padding-top: 46px;
+  padding-bottom: 46px;
+}
+
+.practical_project {
+  padding: 43px 40px;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  background: #F6F5FB;
+}
+
+.practical_project_img {
+  position: relative;
+  z-index: 1;
+}
+
+.practical_project_img .prectical_dots {
+  position: absolute;
+  top: -43px;
+  right: -40px;
+  z-index: -1;
+}
+
+.practical_project_text {
+  max-width: 517px;
+}
+
+.practical_project_text h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+  padding-bottom: 16px;
+}
+
+.practical_project_text p {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.practical_project_text p span {
+  display: block;
+  padding: 20px 0;
+}
+
+/* =================================
+    Prectical Project Area End
+=================================== */
+/* =================================
+    Counter Up Area Satrt
+=================================== */
+.counter_up_item {
+  background: #FAF9FD;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.counter_up_item h5 {
+  color: #CF0000;
+  font-family: Ruposhi Bangla Unicode;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.counter_up_item p {
+  color: #1F1E1E;
+  font-family: Ruposhi Bangla Unicode;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+/* =================================
+    Counter Up Area End
+=================================== */
+/* =================================
+    Company Area Satrt
+=================================== */
+#company {
+  padding-top: 126px;
+}
+
+.company_heading {
+  padding-bottom: 100px;
+}
+
+.company_heading h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  max-width: 568px;
+  margin: 0 auto;
+}
+
+.company_heading h2 span {
+  color: #CF0000;
+}
+
+.company_menu {
+  padding-bottom: 72px;
+}
+
+.company_menu .nav-tabs {
+  border: none;
+}
+
+.company_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.company_menu ul li {
+  width: 30%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.company_menu ul li .company_nav_tab {
+  display: block;
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  max-width: 236px;
+  margin: 0 auto;
+  border: none;
+  height: 100%;
+}
+
+.company_menu ul li .company_nav_tab.active {
+  color: #CF0000;
+  border: none;
+}
+
+.company_menu ul li .company_nav_tab.active::after {
+  position: absolute;
+  content: '';
+  width: 200%;
+  height: 3px;
+  background: #CF0000;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+}
+
+.company_item {
+  display: none;
+}
+
+.company_item ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.company_item ul li span {
+  width: 20%;
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.company_item.active {
+  display: block;
+}
+
+/* =================================
+    Company Area End
+=================================== */
+/* =================================
+    Blog Area Satrt
+=================================== */
+#blog {
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+
+.blog_heading h2 {
+  font-family: Hind Siliguri;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  padding-bottom: 62px;
+}
+
+.blog_slider .blog_slide_item {
+  margin: 0 13px;
+}
+
+.blog_slider .blogPrevArrow {
+  position: absolute;
+  top: 50%;
+  left: -7px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 10;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  -webkit-box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+          box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.blog_slider .blogNextArrow {
+  position: absolute;
+  top: 50%;
+  right: -7px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 10;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  -webkit-box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+          box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.blog_slider .blogPrevArrow:hover,
+.blog_slider .blogNextArrow:hover {
+  color: #FB312E;
+}
+
+.blog_item {
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  background: #ffffff;
+}
+
+.blog_item .blog_text {
+  border-radius: 0 0 25px 25px;
+  -webkit-border-radius: 0 0 25px 25px;
+  -moz-border-radius: 0 0 25px 25px;
+  -ms-border-radius: 0 0 25px 25px;
+  -o-border-radius: 0 0 25px 25px;
+  background: #ffffff;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-top: none;
+  padding-top: 19px;
+  padding-bottom: 22px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.blog_item .blog_text h6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #666666;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.018em;
+}
+
+.blog_item .blog_text h6 span {
+  color: #FF7E31;
+  padding: 5px 16px;
+  background: #FDF2F2;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.blog_item .blog_text h6 img {
+  margin: 0 10px;
+}
+
+.blog_item .blog_text h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 14px;
+}
+
+.blog_item .blog_text p {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 8px;
+  padding-bottom: 38px;
+}
+
+.blog_item .blog_text a {
+  background: #ffffff;
+  background: -webkit-linear-gradient(5deg, #ff1e1e 35%, #ff8079 100%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+/* =================================
+    Blog Area End
+=================================== */
+/* =================================
+    Footer Area Satrt
+=================================== */
+#footer {
+  padding-top: 83px;
+  background: #403532;
+  position: relative;
+}
+
+#footer .footer_left {
+  position: absolute;
+  left: 60px;
+  top: 57px;
+}
+
+#footer .footer_right {
+  position: absolute;
+  right: 60px;
+  top: 57px;
+}
+
+.footer_heading {
+  max-width: 674px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 96px;
+}
+
+.footer_heading h2 {
+  color: #ffffff;
+  font-family: Hind Siliguri;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+}
+
+.footer_heading p {
+  color: #BAB5AD;
+  font-family: Hind;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 39px;
+}
+
+.footer_heading .footer_btn {
+  text-align: center;
+}
+
+.footer_heading .footer_btn a {
+  width: 177px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: Hind Siliguri;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  margin: 0 10px;
+}
+
+.footer_heading .footer_btn a:hover {
+  border: 1px solid transparent;
+  font-family: Hind Siliguri;
+  color: #fff;
+  background: linear-gradient(214.38deg, #FF8079 -2.24%, #FF1E1E 59.38%);
+  border-radius: 10px;
+  text-align: center;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.footer_item_1 h5 {
+  color: #ffffff;
+  font-family: Hind Siliguri;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  margin-bottom: 22px;
+}
+
+.footer_item_1 ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 26px;
+}
+
+.footer_item_1 ul li:last-child {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_item_1 ul li .footer_icon {
+  min-width: 31px;
+  height: 31px;
+  background: #695C49;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_item_1 ul li .footer_icon svg {
+  line-height: 31px;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.7;
+  vertical-align: middle;
+  align-self: center;
+}
+
+.footer_item_1 ul li .footer_text {
+  color: #ffffff;
+  font-family: Hind;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-left: 12px;
+  letter-spacing: 0.20000000298023224px;
+  opacity: 0.7;
+}
+
+.footer_item_1 ul li .footer_text span {
+  display: block;
+  line-height: 24px;
+}
+
+.footer_item_1 ul li .footer_text span a {
+  color: #ffffff;
+  font-family: Hind;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.20000000298023224px;
+  opacity: 0.7;
+}
+
+.footer_item_2 h5 {
+  color: #ffffff;
+  font-family: Hind Siliguri;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  margin-bottom: 22px;
+}
+
+.footer_item_2 ul li {
+  margin-bottom: 17px;
+}
+
+.footer_item_2 ul li a {
+  color: #ffffff;
+  font-family: Hind;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.20000000298023224px;
+  opacity: 0.7;
+}
+
+.copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.103);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.copy .copy_text p {
+  color: #ffffff;
+  text-align: center;
+  font-family: Hind;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.copy .copy_social_link {
+  text-align: right;
+}
+
+.copy .copy_social_link a {
+  width: 39px;
+  height: 39px;
+  text-align: center;
+  line-height: 39px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.342);
+  color: #ffffff;
+  font-size: 16px;
+  background: transparent;
+  margin-left: 12px;
+}
+
+/* =================================
+    Footer Area Satrt
+=================================== */
+/* =================================
+professional Graphic banner Area Start
+=================================== */
+#profe_graphic_banner {
+  padding-top: 154px;
+  padding-bottom: 53px;
+  position: relative;
+  position: 1;
+}
+
+#profe_graphic_banner .pink_shape {
+  position: absolute;
+  left: 0;
+  top: -2%;
+  z-index: -2;
+}
+
+#profe_graphic_banner .white_dots {
+  position: absolute;
+  left: 8%;
+  top: 35%;
+  z-index: -1;
+}
+
+#profe_graphic_banner .yellow_shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.pg_banner_text h4 {
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  background: #ffffff;
+  background: -webkit-linear-gradient(24deg, #ff1e1e 35%, #ff8079 100%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pg_banner_text h1 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 7px;
+  padding-bottom: 16px;
+}
+
+.pg_banner_text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pg_banner_text ul li {
+  width: 136px;
+  color: #000000;
+  font-family: Hind Siliguri;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  margin-right: 8px;
+  padding: 16px 0;
+  border-radius: 20px;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.pg_banner_text ul li span {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.11224490404129028px;
+  text-align: center;
+}
+
+.pg_banner_text > p {
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 15px;
+  padding-bottom: 36px;
+}
+
+.pg_banner_text .pg_banner_btn a {
+  font-family: Hind Siliguri;
+  color: #fff;
+  background: linear-gradient(214.38deg, #FF8079 -2.24%, #FF1E1E 59.38%);
+  border-radius: 10px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 15px 44px;
+  margin-right: 13px;
+}
+
+.pg_banner_text .pg_banner_btn a:last-child {
+  margin-right: 0;
+}
+
+.pg_banner_text .stars p {
+  color: #787A82;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  padding-top: 17px;
+}
+
+.pg_banner_text .stars p svg {
+  color: #FFAE4F;
+  margin-right: 5px;
+}
+
+.pg_banner_text .stars p span {
+  letter-spacing: 0.20000000298023224px;
+  margin-left: 70px;
+}
+
+.pg_banner_img_col {
+  position: relative;
+}
+
+.pg_banner_img_col .yellow_dots_right {
+  position: absolute;
+  top: 9%;
+  right: -13%;
+}
+
+.pg_banner_img_col .yellow_dot_left {
+  position: absolute;
+  bottom: 10%;
+  left: -4px;
+  z-index: -1;
+}
+
+.pg_banner_img {
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+/* =================================
+professional Graphic banner Area ENd
+=================================== */
+/* =================================
+Course-Landing Left (7 column) Overviwe  Area Start
+=================================== */
+#pg_course_overviwe {
+  padding-top: 53px;
+  padding-bottom: 68px;
+}
+.course_overview_article{
+  margin-bottom: 32px;
+}
+.course_overview_article p{
+  margin-bottom: 14px;
+}
+
+.course_overviwe_text ul li {
+  color: #414141;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course_overviwe_text ul li span {
+  width: 20px;
+  height: 20px;
+  margin-right: 11px;
+}
+
+.course_overviwe_text ul.huda li {
+  color: #414141;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course_overviwe_text ul.huda li span {
+  width: 20px;
+  height: 20px;
+  margin-right: 11px;
+}
+
+.course_overviwe_text h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 16px;
+}
+
+.course_overviwe_text p {
+  color: #575757;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.course_overviwe_text p span {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* */
+.pgc_curriculum {
+  margin-top: 90px;
+  background: #FAF9FD;
+  border-radius: 25px;
+  padding: 40px;
+}
+
+.pgc_curriculum h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 30px;
+}
+
+.pgc_curriculum > ul > li {
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 30px;
+}
+
+.pgc_curriculum > ul > li::after {
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 100%;
+  background: #E9E7ED;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.pgc_curriculum > ul > li::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #E9E7ED;
+  left: -10px;
+  top: 0;
+  bottom: 0;
+}
+
+.pgc_curriculum > ul > li:last-child::after {
+  display: none;
+}
+
+.pgc_curriculum > ul > li > h4 {
+  color: #000000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  padding-bottom: 14px;
+}
+
+.pgc_curriculum > ul > li > h4 span {
+  color: #FF7E31;
+}
+
+.pgc_inner_text ul li {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.20000000298023224px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pgc_inner_text ul li span {
+  display: inline-block;
+  margin-right: 15px;
+  padding-bottom: 4px;
+}
+
+.pgc_software {
+  padding: 56px 69px;
+  background: #FAF9FD;
+  border-radius: 25px;
+  margin-top: 49px;
+}
+
+.pgc_software h3 {
+  padding-bottom: 38px;
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.pgc_item{
+  margin-bottom: 30px;
+}
+
+.pgc_item .pgcs_icon {
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.pgc_item .pgcs_text p {
+  color: #605F62;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+/* এই কোর্স যাদের জন্য */
+.pgc_for_whom {
+  padding: 52px 53px;
+  background: #FEF9F9;
+  border-radius: 25px;
+  margin-top: 45px;
+}
+
+.pgc_for_whom h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 30px;
+}
+
+.pgcf_whom_item {
+  padding-top: 58px;
+  padding-bottom: 34px;
+  margin-bottom: 19px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 30px;
+}
+
+.pgcf_whom_item .pgcf_whom_item_icon {
+  width: auto;
+  margin: 0 auto;
+}
+
+.pgcf_whom_item .pgcf_whom_item_text p {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 22px;
+}
+
+.pgcf_btn {
+  padding-top: 31px;
+}
+
+.pgcf_btn a {
+  color: #CF0000;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+/* আপনি যেখানে কাজ করতে পারেন*/
+.pg_marketplace {
+  padding: 58px 50px;
+  background: rgba(248, 252, 234, 0.6);
+  border-radius: 25px;
+  margin-top: 45px;
+}
+
+.pg_marketplace h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 43px;
+}
+
+.pg_marketplace .marketplace_item {
+  padding-top: 18px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+  background: #ffffff;
+  border-radius: 30px;
+  margin-bottom: 27px;
+}
+
+.pg_marketplace .marketplace_item .icon {
+  text-align: center;
+}
+
+.pg_marketplace .marketplace_item .icon h5 {
+  text-align: center;
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.pg_marketplace .marketplace_item .text p {
+  color: #575757;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  padding-top: 21px;
+}
+
+/* ==========যে সকল পজিশনে জব করতে পারবেন========== */
+.pg_job {
+  margin-top: 50px;
+  background: rgba(255, 247, 235, 0.6);
+  border-radius: 25px;
+  padding: 56px 59px;
+}
+
+.pg_job h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 47px;
+}
+
+.job_item ul li {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.job_item ul li svg {
+  margin-right: 30px;
+}
+
+/*======== শিক্ষার্থিদের আরও যে সকল সুবিধা দিয়ে থাকি ========*/
+.pgs_facilitice {
+  margin-top: 97px;
+}
+
+.pgs_facilitice h3 {
+  max-width: 644px;
+  margin: 0 auto;
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 30px;
+}
+
+.pg_more_facilities_item {
+  padding: 35px;
+  margin-bottom: 27px;
+  border-radius: 33px;
+  -webkit-border-radius: 33px;
+  -moz-border-radius: 33px;
+  -ms-border-radius: 33px;
+  -o-border-radius: 33px;
+}
+
+.pg_more_facilities_item h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+}
+
+.pg_more_facilities_item p {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.20000000298023224px;
+  max-width: 257px;
+  padding-bottom: 4px;
+}
+
+.pg_more_facilities_item_1 {
+  background: linear-gradient(229.38deg, #F7FCE7 2.83%, rgba(247, 252, 231, 0.3) 96.18%);
+}
+
+.pg_more_facilities_item_2 {
+  background: linear-gradient(229.69deg, #FDF3FD 3.63%, rgba(253, 243, 253, 0.29) 98.73%);
+}
+
+.pg_more_facilities_item_3 {
+  background: linear-gradient(230.46deg, #FFF7EB 0%, rgba(255, 247, 235, 0.3) 100%);
+}
+
+.pg_more_facilities_item_4 {
+  background: linear-gradient(232.39deg, #EDFBF2 1.93%, rgba(237, 251, 242, 0.3) 97.41%);
+}
+
+.pg_more_facilities_item_5 {
+  background: linear-gradient(229.2deg, #E9F9FC -2.12%, rgba(233, 249, 252, 0.3) 100%);
+}
+
+.pg_more_facilities_item_6 {
+  background: linear-gradient(227.39deg, #FDF2F2 2.74%, rgba(253, 242, 242, 0.3) 97.4%);
+}
+
+/*======= আমাদের স্টুডেন্টদের করা কিছু প্রজেক্ট ========*/
+.pgs_project {
+  margin-top: 59px;
+}
+
+.pgs_project h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 48px;
+}
+
+.pgp_slide_item {
+  overflow: hidden;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.pgs_project .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pgs_project .slick-dots li {
+  margin: 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #EBEBEB;
+  cursor: pointer;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.pgs_project .slick-dots li:hover {
+  background: #CF0000;
+}
+
+.pgs_project .slick-dots li button {
+  display: none;
+}
+
+.pgs_project .slick-dots li.slick-active {
+  background: #CF0000;
+}
+
+/* ========  আমাদের স্টুডেন্টদের ফিডব্যাক ========*/
+.pg_student_feedback {
+  padding-top: 91px;
+}
+
+.pg_student_feedback h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 42px;
+}
+
+.pg_student_feedback .pg_feedback_item {
+  margin-right: 9px;
+  margin-left: 9px;
+}
+
+.pg_student_feedback .student_feedback_item ul .student_social_link {
+  width: 24px;
+  height: 24px;
+  right: -16px;
+  top: 0;
+}
+
+.pg_student_feedback .studentPrevArrow.slick-arrow {
+  left: -11px;
+}
+
+.pg_student_feedback .studentNextArrow.slick-arrow {
+  right: -11px;
+}
+
+/* =================================
+Course-Landing Left (7 column) Course Overviwe  Area End
+=================================== */
+/* =================================
+Course-Landing right side bar Position Stiky  Area Start
+=================================== */
+.pg_succsess_story {
+  background: #FAF9FD;
+  border-radius: 28px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-left: 33px;
+  padding-right: 20px;
+}
+
+.pg_succsess_story .heading {
+  padding-bottom: 10px;
+}
+
+.pg_succsess_story .heading h4 {
+  color: #1F1E1E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.pg_succsess_story .heading h4 span a {
+  color: #CF0000;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.pg_succsess_img_slider .pg_slide_item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pg_succsess_img_slider .pg_slide_item a {
+  display: block;
+}
+
+.pg_succsess_img_slider .slick-dots {
+  margin-top: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pg_succsess_img_slider .slick-dots li {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin: 0 3px;
+  background: #EBEBEB;
+  cursor: pointer;
+}
+
+.pg_succsess_img_slider .slick-dots li button {
+  display: none;
+}
+
+.pg_succsess_img_slider .slick-dots li.slick-active {
+  background: #FF1E1E;
+}
+
+.pg_wait {
+  margin-top: 29px;
+  background: #FBF2F2;
+  border-radius: 26px;
+  padding: 23px 33px;
+}
+
+.pg_wait > h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.pg_wait > p {
+  color: #575757;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  padding-top: 13px;
+  padding-bottom: 33px;
+}
+
+.pg_wait .join_offline {
+  background: url(../images/course-landing/pg-wait-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 30px;
+  margin-bottom: 20px;
+  -webkit-transition: all linear .5s;
+  transition: all linear .5s;
+}
+
+.pg_wait .join_offline:hover {
+  background: #ffffff;
+  -webkit-transition: all linear .5s;
+  transition: all linear .5s;
+}
+
+.pg_wait .join_offline:hover h4 {
+  color: #1F1E1E;
+}
+
+.pg_wait .join_offline:hover p {
+  color: #1F1E1E;
+}
+
+.pg_wait .join_offline:hover a {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF8079), to(#FF1E1E));
+  background: linear-gradient(#FF8079, #FF1E1E);
+  color: #ffffff;
+}
+
+.pg_wait .join_offline h4 {
+  color: #ffffff;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.pg_wait .join_offline p {
+  color: #ffffff;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 9px;
+  padding-bottom: 17px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.pg_wait .join_offline a {
+  color: #CF0000;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.20000000298023224px;
+  border-radius: 10px;
+  background: #ffffff;
+  text-align: center;
+  line-height: 59px;
+  padding: 0 63px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.pg_wait .wait_btn a {
+  display: block;
+  border: 1px solid #CF0000;
+  border-radius: 10px;
+  padding: 15px 0;
+  color: #CF0000;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+}
+
+/* =================================
+Course-Landing right side bar Position Stiky  Area End
+=================================== */
+/* =================================
+    For Whom Area Start
+=================================== */
+#pro_gra_forwhom {
+  padding-top: 150px;
+}
+
+#pro_gra_forwhom h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 61px;
+}
+
+.pg_for_whom_video {
+  border-radius: 18.4262px;
+  overflow: hidden;
+  margin-bottom: 74px;
+}
+
+.pro_gra_for_whom_item {
+  margin-bottom: 84px;
+}
+
+.pro_gra_for_whom_item:last-child {
+  margin-bottom: 187px;
+}
+
+.pro_gra_for_whom_item:nth-child(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.pro_gra_for_whom_item:nth-child(odd) .for_whom_image {
+  text-align: center;
+}
+
+.pro_gra_for_whom_item .for_whom_image {
+  width: 50%;
+}
+
+.pro_gra_for_whom_item .for_whom_content {
+  width: 50%;
+}
+
+.pro_gra_for_whom_item .for_whom_content .for_whom_text {
+  max-width: 293px;
+  margin: 0 auto;
+}
+
+.pro_gra_for_whom_item .for_whom_content .for_whom_text h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.pro_gra_for_whom_item .for_whom_content .for_whom_text p {
+  color: #575757;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+/* =================================
+    For Whom Area End
+=================================== */
+/* =================================
+    প্রফেশনাল গ্রাফিক্স ডিজাইন শুরু 
+=================================== */
+#desktop_50_pgc {
+  padding-top: 42px;
+}
+
+#desktop_50_pgc h1 {
+  color: #1F1E1E;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 2px;
+}
+
+#desktop_50_pgc p {
+  color: #605F62;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.admission_rule ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admission_rule ul li {
+  width: 136px;
+  color: #000000;
+  font-family: Hind Siliguri;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  margin-right: 8px;
+  padding: 16px 0;
+  border-radius: 20px;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.admission_rule ul li span {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.11224490404129028px;
+  text-align: center;
+}
+
+/* =================================
+    প্রফেশনাল গ্রাফিক্স ডিজাইন শেষ  
+=================================== */
+/* =================================
+    ভর্তির নিয়মাবলী শুরু 
+=================================== */
+.pgc_overviwe_text {
+  background: linear-gradient(127.39deg, #FFFFFF 2.83%, #FFE7E7 81.54%);
+  border: 9px solid #FFFFFF;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 39px;
+  padding: 40px 65px;
+}
+
+.pgc_overviwe_text .admission_rules h3 {
+  color: #1F1E1E;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 13px;
+}
+
+.pgc_overviwe_text .admission_rules p {
+  color: #605F62;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  padding-bottom: 13px;
+  max-width: 930px;
+}
+
+.pgc_overviwe_text ul li {
+  color: #414141;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pgc_overviwe_text ul li span {
+  width: 20px;
+  height: 20px;
+  margin-right: 11px;
+}
+
+/* =================================
+    ভর্তির নিয়মাবলী শেষ  
+=================================== */
+/* =================================
+    কোর্স টাইপ সিলেক্ট করুন শুরু 
+=================================== */
+#course_type {
+  margin-top: 50px;
+}
+
+#course_type .course_type_heading h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 20px;
+}
+
+#course_type .course_type_btn {
+  margin-top: 85px;
+  padding-bottom: 90px;
+  text-align: right;
+}
+
+#course_type .course_type_btn a {
+  font-family: Hind Siliguri;
+  color: #fff;
+  background: linear-gradient(214.38deg, #FF8079 -2.24%, #FF1E1E 59.38%);
+  border-radius: 10px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 14px 48px;
+  color: #ffffff;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.course_type_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 39px;
+  padding: 32px 36px;
+}
+
+.course_type_item .form-check .form-check-input {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #D4D4D4;
+  background: #ffffff;
+  margin-right: 27px;
+}
+
+.course_type_item .form-check .form-check-input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.course_type_item .form-check .form-check-input:checked[type="radio"] {
+  background: #ffffff;
+  position: relative;
+  border: 1px solid #CF0000;
+}
+
+.course_type_item .form-check .form-check-input:checked[type="radio"]::after {
+  width: 20px;
+  height: 20px;
+  background: #CF0000;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.course_type_item .form-check .form-check-input:checked[type="radio"]:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.course_type_item .text h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.course_type_item .text p {
+  color: #575757;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+/* =================================
+    কোর্স টাইপ সিলেক্ট করুন শেষ  
+=================================== */
+/* =================================
+Our facilities Heading Area Start
+=================================== */
+#navbar.our_facilies_navbar {
+  position: relative;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+#our_facilities {
+  padding-top: 125px;
+}
+
+.facilities_heading h2 {
+  color: #CF0000;
+  font-family: Hind Siliguri;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 29px;
+}
+
+.facilities_heading p {
+  color: #575757;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 59px;
+  max-width: 857px;
+}
+
+/* =================================
+Our facilities Heading Area End
+=================================== */
+/* =================================
+Our facilities_item Area Start
+=================================== */
+#about_top {
+  margin-top: 125px;
+}
+
+.job_placement {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  padding-right: 37px;
+  background: #FBFDF2;
+  border-radius: 35px;
+  margin-bottom: 30px;
+}
+
+.job_placement_contant {
+  max-width: 555px;
+}
+
+.job_placement_contant ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.job_placement_contant ul li {
+  color: #CF0000;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.job_placement_contant ul li span {
+  display: block;
+  font-size: 14px;
+  color: #575757;
+  padding-top: 5px;
+}
+
+.job_placement_contant ul li h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.job_placement_contant p {
+  color: #575757;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 20px;
+  padding-bottom: 62px;
+}
+
+.job_placement_contant p span {
+  display: block;
+  padding-top: 35px;
+}
+
+.job_placement_contant_img {
+  max-width: 535px;
+  border-radius: 31px;
+  position: relative;
+}
+
+.jobplacement_partner {
+  background: #FFFFFF;
+  border-radius: 28px;
+  padding-top: 38px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 22px;
+}
+
+.jobplacement_partner h3 {
+  color: #1F1E1E;
+  text-align: center;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 20px;
+}
+
+.jobplacement_partner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jobplacement_partner ul li {
+  width: 31%;
+  height: 80px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+}
+
+.jobplacement_partner ul li:last-child {
+  border: none;
+}
+
+.jobplacement_partner ul li p {
+  font-family: Ruposhi Bangla Unicode;
+  color: #FF7E31;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+}
+
+.jobplacement_partner ul li p span {
+  display: block;
+  font-size: 14px;
+  color: #000000;
+}
+
+.freelancing p {
+  padding-bottom: 25px;
+}
+
+.support_item {
+  border-radius: 35px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-bottom: 47px;
+}
+
+.support_item h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.support_item p {
+  color: #575757;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 30px;
+  padding-bottom: 21px;
+  max-width: 471px;
+}
+
+.support_item .support_item_img {
+  max-width: 455px;
+  border-radius: 31px;
+  position: relative;
+}
+
+.support_item .support_item_img > .video_icon a {
+  line-height: 40px;
+}
+
+.support_item .support_item_img > .video_icon a i {
+  padding-left: 4px;
+}
+
+.intarnship {
+  background: #EDFBF2;
+}
+
+.vedio_recroding {
+  background: #FDF3FD;
+}
+
+.instent_support {
+  background: #F7FCE7;
+}
+
+.lifetime_support {
+  background: #E9F9FC;
+}
+
+/* =================================
+Our facilities_item Area End
+=================================== */
+/* =================================
+    Desktop-31 ওয়াও! আপনি কোর্সে যে সেবা গুলো সম্পূর্ন ফ্রিতে পাচ্ছেন? শুরু 
+=================================== */
+#course_free_facilities {
+  margin-top: 53px;
+}
+
+#course_free_facilities .course_free_facilities_heading {
+  padding-bottom: 34px;
+}
+
+#course_free_facilities .course_free_facilities_heading h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+#course_free_facilities .course_free_facilities_heading h3 span {
+  color: #CF0000;
+}
+
+.course_free_facilities_item {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  padding: 16px 35px;
+  position: relative;
+  margin-bottom: 23px;
+}
+
+.course_free_facilities_item h4 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  text-align: left;
+}
+
+.course_free_facilities_item p {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 11px;
+}
+
+.course_free_facilities_item a {
+  color: #FF7E31;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.course_free_facilities_item a svg {
+  margin-bottom: 4px;
+  margin-right: 8px;
+}
+
+.course_free_facilities_btn {
+  margin-top: 85px;
+  padding-bottom: 90px;
+  text-align: right;
+}
+
+.course_free_facilities_btn a {
+  font-family: Hind Siliguri;
+  color: #fff;
+  background: linear-gradient(214.38deg, #FF8079 -2.24%, #FF1E1E 59.38%);
+  border-radius: 10px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 14px 48px;
+  color: #ffffff;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+/* =================================
+    Desktop-31 ওয়াও! আপনি কোর্সে যে সেবা গুলো সম্পূর্ন ফ্রিতে পাচ্ছেন? শেষ  
+=================================== */
+/* =================================
+    All Courses Area Start
+=================================== */
+#all_courses_menu {
+  padding-bottom: 68px;
+}
+
+.courses_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.courses_menu ul li {
+  width: 19%;
+  height: 157px;
+  background: #ffffff;
+  -webkit-box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+          box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 24px;
+}
+
+.courses_menu ul li .course_menu_single_item {
+  display: block;
+  text-align: center;
+}
+
+.courses_menu ul li .course_menu_single_item h4 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0em;
+  padding-top: 16px;
+}
+
+.courses_menu ul li .course_menu_single_item h4 span {
+  display: block;
+}
+
+/* =================================
+    All Courses Area End
+=================================== */
+/* =================================
+    Desktop-31 ওয়াও! আপনি কোর্সে যে সেবা গুলো সম্পূর্ন ফ্রিতে পাচ্ছেন? শুরু 
+=================================== */
+.course_free_facilities_item {
+  position: relative;
+}
+
+.course_free_facilities_item:hover .hover_play_video {
+  opacity: 1;
+  visibility: visible;
+  left: 102px;
+}
+
+.hover_play_video {
+  margin-left: 100px;
+  width: 350px;
+  background: #ffffff;
+  -webkit-box-shadow: 4px 4px 150px rgba(0, 0, 0, 0.39);
+          box-shadow: 4px 4px 150px rgba(0, 0, 0, 0.39);
+  border-radius: 22px;
+  padding: 18px 25px 26px 33px;
+  position: absolute;
+  z-index: 100;
+  top: -19px;
+  left: 95px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.hover_play_video::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 6px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 30px;
+  left: -10px;
+}
+
+.hover_play_video .video_img {
+  position: relative;
+}
+
+.hover_play_video .play_check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 17px;
+}
+
+.hover_play_video .play_check input {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #D4D4D4;
+}
+
+.hover_play_video .play_check input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.hover_play_video .play_check input:checked {
+  background-color: #CF0000;
+  border-color: #CF0000;
+}
+
+.hover_play_video .play_check h3 {
+  color: #CF0000;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-left: 23px;
+}
+
+/* =================================
+    Desktop-31 ওয়াও! আপনি কোর্সে যে সেবা গুলো সম্পূর্ন ফ্রিতে পাচ্ছেন? শেষ  
+=================================== */
+/* =================================
+    Desktop-25 Course Fee Box Satrt
+=================================== */
+.extra_facilities_item {
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  margin-bottom: 18px;
+  background: #ffffff;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  padding: 14px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.extra_facilities_item:hover {
+  border: 3px solid #FFEBEB;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.extra_facilities_item .extra_facilities_check {
+  margin-right: 22px;
+  /* <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 7L5.5 11L15.5 1" stroke="#CF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>*/
+}
+
+.extra_facilities_item .extra_facilities_check input.form-check-input {
+  width: 28px;
+  height: 28px;
+  background: #ffffff;
+  border: 1px solid #D4D4D4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.extra_facilities_item .extra_facilities_check input.form-check-input:checked {
+  background-color: #FFF1F1;
+  border: 1px solid #CF0000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  position: relative;
+}
+
+.extra_facilities_item .extra_facilities_check input.form-check-input:checked::after {
+  font-family: "FontAwesome";
+  position: absolute;
+  content: "\f00c";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #CF0000;
+}
+
+.extra_facilities_item .extra_facilities_check input.form-check-input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.extra_facilities_item .extra_facilities_text {
+  position: relative;
+}
+
+.extra_facilities_item .extra_facilities_text:hover .hover_play_video {
+  opacity: 1;
+  visibility: visible;
+}
+
+.extra_facilities_item .extra_facilities_text h4 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  color: #CF0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.extra_facilities_item .extra_facilities_text h4 span {
+  color: #FF7E31;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.extra_facilities_item .extra_facilities_text p {
+  color: #575757;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.extra_facilities_item .extra_facilities_text a {
+  color: #FF7E31;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.extra_facilities_item .extra_facilities_text a svg {
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+/* =================================
+    Desktop-25 Course Fee Box End
+=================================== */
+/* =================================
+    Desktop-25 Course Fee Box Satrt
+=================================== */
+.course_fee_box {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+  padding-top: 32px;
+  padding-bottom: 42px;
+  padding-left: 28px;
+  padding-right: 28px;
+  margin-top: -24px;
+}
+
+.course_fee_box h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 10px;
+}
+
+.course_fee_box table {
+  width: 100%;
+}
+
+.course_fee_box table tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.course_fee_box table tr td {
+  color: #1F1E1E;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.course_fee_box table tr td.discount {
+  color: #CF0000;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.course_fee_box table tr.fee {
+  color: #1F1E1E;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.course_fee_box table tr.fasilitice td {
+  color: #A9A9A9;
+}
+
+.course_fee_box table tr.subtotal {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 5px;
+  margin-top: 8px;
+}
+
+.course_fee_box table tr.subtotal > td {
+  color: #1F1E1E;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.course_fee_box table tr.total {
+  margin-top: 8px;
+  padding-top: 5px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.course_fee_box table tr.total td {
+  color: #1F1E1E;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+/* =================================
+    Desktop-25 Course Fee Box End
+=================================== */
+/* =================================
+    Success Story Menu Area Start
+=================================== */
+
+.success_menu{
+  display: inline-block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 72px;
+}
+
+.success_menu li {
+  display: inline-block;
+  text-align: center;
+  margin-right: 60px;
+}
+
+.success_menu li:last-child {
+  margin-right: 0;
+}
+
+.success_menu li a {
+  display: inline-block;
+}
+
+.success_menu li .nav-link {
+  display: block;
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  cursor: pointer;
+  max-width: 236px;
+  margin: 0 auto;
+  border: none;
+}
+
+.success_menu li .nav-link.active {
+  color: #ff4200;
+  border: none;
+}
+
+.success_menu li .nav-link.active::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #CF0000;
+  left: 0;
+  bottom: 0;
+}
+
+.success_item {
+  -webkit-box-shadow: 0px 39px 37px #F4F4F4;
+          box-shadow: 0px 39px 37px #F4F4F4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.success_item a {
+  display: block;
+}
+
+.ss_pagination {
+  margin-top: 63px;
+  margin-bottom: 80px;
+}
+
+.ss_pagination ul li {
+  width: 32px;
+  height: 32px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 4px;
+}
+
+.ss_pagination ul li a.page-link {
+  line-height: 32px;
+  padding: 0;
+  color: #232222;
+  border: 1px solid #E3E3E3;
+}
+
+.ss_pagination ul li a.page-link:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #CF0000;
+  color: #fff;
+  border: 1px solid #CF0000;
+}
+
+.ss_pagination ul li a.page-link:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #CF0000;
+  color: #fff;
+  border: 1px solid #CF0000;
+}
+
+/* =================================
+    Success Story Menu Area End
+=================================== */
+/* =================================
+    Desktop-31 ওয়াও! আপনি কোর্সে যে সেবা গুলো সম্পূর্ন ফ্রিতে পাচ্ছেন? শুরু 
+=================================== */
+.extra_facilities_item {
+  position: relative;
+}
+
+.extra_facilities_item:hover .hover_play_video {
+  opacity: 1;
+  visibility: visible;
+  left: 53px;
+}
+
+.hover_play_video {
+  margin-left: 100px;
+  width: 350px;
+  background: #ffffff;
+  -webkit-box-shadow: 4px 4px 150px rgba(0, 0, 0, 0.39);
+          box-shadow: 4px 4px 150px rgba(0, 0, 0, 0.39);
+  border-radius: 22px;
+  padding: 18px 25px 26px 33px;
+  position: absolute;
+  z-index: 100;
+  top: -19px;
+  left: 58px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.hover_play_video::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 6px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 30px;
+  left: -10px;
+}
+
+.hover_play_video .video_img {
+  position: relative;
+}
+
+.hover_play_video .play_check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 17px;
+}
+
+.hover_play_video .play_check input {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #D4D4D4;
+}
+
+.hover_play_video .play_check input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.hover_play_video .play_check input:checked {
+  background-color: #CF0000;
+  border-color: #CF0000;
+}
+
+.hover_play_video .play_check h3 {
+  color: #CF0000;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-left: 23px;
+}
+
+/* =================================
+    Desktop-31 ওয়াও! আপনি কোর্সে যে সেবা গুলো সম্পূর্ন ফ্রিতে পাচ্ছেন? শেষ  
+=================================== */
+/* =================================
+    Instructor Heading Area Start
+=================================== */
+#instructors_teachers {
+  margin-top: 200px;
+  padding-bottom: 63px;
+}
+
+.instructors_item {
+  height: 176px;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.instructors_item > .image {
+  margin-left: 50px;
+}
+
+.instructors_item > .text {
+  margin-left: 47px;
+}
+
+.instructors_item > .text h4 {
+  color: #000000;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 31px;
+}
+
+.instructors_item > .text h4 span {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.instructors_item_1 {
+  background: #FDF2F2;
+}
+
+.instructors_item_2 {
+  background: #EDFBF2;
+}
+
+.instructors_item_3 {
+  background: #FDF3FD;
+}
+
+/* =================================
+    Instructor Heading Area End
+=================================== */
+/* =================================
+    Instructor Profile Area Start
+=================================== */
+.instructor_profile {
+  background: #FFFFFF;
+  border: 6px solid rgba(207, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 23px 19px;
+}
+
+.instructor_img {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.instructor_qualification {
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.instructor_profile_heading h1 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 10px;
+}
+
+.instructor_profile_heading p {
+  color: #CF0000;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.instructor_profile_inner_item h4 {
+  color: #342B27;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 13px;
+  padding-bottom: 4px;
+}
+
+.instructor_profile_inner_item ol {
+  list-style: disc !important;
+  margin-left: 14px;
+}
+
+.instructor_profile_inner_item ol li {
+  color: rgba(52, 43, 39, 0.8);
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.instructor_profile_inner_item h5 {
+  color: #1F1E1E;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.instructor_profile_inner_item .inner_icon img {
+  margin-right: 11px;
+  margin-bottom: 13px;
+}
+
+.instructor_profile_inner_item .inner_icon img:last-child {
+  margin-right: 0;
+}
+
+.market_icon {
+  padding-top: 14px;
+}
+
+.market_icon img {
+  margin-right: 10px;
+}
+
+.market_icon img:last-child {
+  margin-right: 0;
+}
+
+.experiance {
+  padding-bottom: 25px;
+  padding-bottom: 36pxx;
+}
+
+/* single_profile_item  Part Start*/
+.single_instructor {
+  margin-top: 50px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 30, 30, 0.07);
+  border-radius: 30px;
+  padding: 34px;
+}
+
+.single_profile_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single_profile_item .single_profile_img {
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  margin-right: 22px;
+}
+
+.single_profile_item .single_profile_name h4 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 7px;
+}
+
+.single_profile_item .single_profile_name p {
+  color: #CF0000;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.single_pro_inner_item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  padding-bottom: 12px;
+}
+
+/* =================================
+    Instructor Profile Area End
+=================================== */
+/* =================================
+    Desktop-27 আপনার ব্যক্তিগত তথ্য শুরু 
+=================================== */
+form.student_form .form-floating label {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.002em;
+  padding-left: 22px;
+}
+
+form.student_form .form-floating select,
+form.student_form .form-floating textarea {
+  background: #FFFFFF;
+  border: 1px solid #E8E8EE;
+  border-radius: 10px;
+  padding: 17px 22px;
+  resize: none;
+}
+
+form.student_form .form-floating select:focus,
+form.student_form .form-floating textarea:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #c7c7c7;
+}
+
+form.student_form input {
+  background: #FFFFFF;
+  border: 1px solid #E8E8EE;
+  border-radius: 10px;
+  padding: 17px 22px;
+}
+
+form.student_form input.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #c7c7c7;
+}
+
+form.student_form select {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.002em;
+  border: 1px solid #E8E8EE;
+  border-radius: 10px;
+  padding: 17px 22px;
+}
+
+/* =================================
+    Desktop-27 আপনার ব্যক্তিগত তথ্য শেষ 
+=================================== */
+/* =================================
+    Desktop-27 শুরু
+=================================== */
+.pagination_main ul li {
+  margin: 0 5px;
+  position: relative;
+}
+
+.pagination_main ul li::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 20px;
+  right: -6px;
+  top: 4px;
+  background: #1F1E1E;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(27deg);
+}
+
+.pagination_main ul li:last-child::after {
+  display: none;
+}
+
+.pagination_main ul li a.active {
+  color: #1F1E1E;
+}
+
+.pagination_main {
+  margin-top: 90px;
+}
+
+/* =================================
+    Desktop-27 শেষ
+=================================== */
+/*==================================
+        About Page Start
+================================== */
+#about_top .about_top_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 35px;
+}
+
+#about_top .about_top_img .single_img {
+  margin: 41px;
+}
+
+/*==================================
+        About Page Start
+================================== */
+/*==================================
+        About Page CEO Part Start
+================================== */
+#ceo {
+  margin-top: 93px;
+}
+
+#ceo > .container > .row:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding-top: 93px;
+}
+
+.ceo_img {
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.ceo_text h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.ceo_text h4 {
+  color: #cf0000;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+}
+
+.ceo_text p {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.ceo_text p span {
+  display: block;
+  padding: 14px 0;
+}
+
+.orjon {
+  padding-top: 70px;
+}
+
+.orjon h3 {
+  color: black;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 15px;
+}
+
+.orjon ul li {
+  display: inline-block;
+  margin-right: 45px;
+}
+
+.orjon ul li:last-child {
+  margin-right: 0;
+}
+
+.follow_on h3 {
+  color: black;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 22px;
+  padding-top: 21px;
+}
+
+.follow_on ul li {
+  display: inline-block;
+  margin-right: 11px;
+  text-align: center;
+}
+
+.follow_on ul li a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: block;
+  line-height: 42px;
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.follow_on ul li:last-child {
+  margin-right: 0;
+}
+
+.follow_on ul li .facebook {
+  background: #395185;
+}
+
+.follow_on ul li .instagram {
+  background: linear-gradient(150deg, #774ADF 3.9%, #9748BE 14.95%, #BD4697 30.43%, #D8447A 44.65%, #E94369 57%, #EF4363 66.1%, #EF545E 72.21%, #F08053 84.3%, #F2C141 100%);
+}
+
+.follow_on ul li .linkedin {
+  background: #0A66C2;
+}
+
+.follow_on ul li .twitter {
+  background: #55ACEE;
+}
+
+/*==================================
+        About Page CEO Part Start
+================================== */
+/*==================================
+        About Page ISO Part Start
+================================== */
+#iso {
+  padding-top: 114px;
+  padding-bottom: 88px;
+}
+
+.iso_image {
+  border: 4px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 17px;
+}
+
+.iso_text h3 {
+  color: #1F1E1E;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 47px;
+  letter-spacing: 0.20000000298023224px;
+  max-width: 490px;
+  padding-bottom: 19px;
+}
+
+.iso_text p {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  max-width: 563px;
+}
+
+.iso_text p span {
+  display: block;
+  padding: 10px 0;
+}
+
+/*==================================
+        About Page ISO Part Start
+================================== */
+/*==================================
+        About Page Mission Part Start
+================================== */
+#mission .mission_menu {
+  background: #FAF9FD;
+  border-radius: 15px;
+  padding-top: 30px;
+  padding-bottom: 28px;
+}
+
+#mission .mission_menu ul {
+  border: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#mission .mission_menu .nav-item {
+  display: block;
+}
+
+#mission .mission_menu .nav-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  color: #605F62;
+  border: none;
+  border-radius: 0;
+  text-align: left;
+  padding-left: 27px;
+  width: 100%;
+  line-height: 54px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  border-left: 4px solid transparent;
+}
+
+#mission .mission_menu .nav-item a svg {
+  margin-right: 23px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#mission .mission_menu .nav-item a svg path {
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  fill: rgba(0, 0, 0, 0.27);
+}
+
+#mission .mission_menu .nav-item a:hover {
+  border-left: 4px solid #CF0000;
+  background: #fff;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  cursor: pointer;
+}
+
+#mission .mission_menu .nav-item a:hover svg path {
+  fill: #CF0000;
+}
+
+#mission .mission_menu .nav-item a.active {
+  border-left: 4px solid #CF0000;
+}
+
+#mission .mission_menu .nav-item a.active svg path {
+  fill: #CF0000;
+}
+
+#mission .mission_body h3 {
+  color: #1F1E1E;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 12px;
+}
+
+#mission .mission_body p {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  padding-left: 8px;
+}
+
+#mission .mission_body p span {
+  padding: 15px 0;
+  display: block;
+}
+
+#mission .mission_img {
+  text-align: center;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background: none;
+}
+
+/*==================================
+        About Page Mission Part End
+================================== */
+/*==================================
+        About Page Counter Part Start
+================================== */
+#counter_up.about_counter_up {
+  margin-top: 90px;
+}
+
+#counter_up.about_counter_up h2 {
+  color: #1F1E1E;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 35px;
+}
+
+#counter_up.about_counter_up .counter_up_item {
+  background: #FAF9FD;
+  border-left: 3px solid rgba(207, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 18px 26px;
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+#counter_up.about_counter_up .counter_up_item p {
+  max-width: 176px !important;
+}
+
+/*==================================
+        About Page Counter Part End
+================================== */
+/*=======================================
+About Page Office and training  Part Start
+======================================= */
+#office_and_traning {
+  margin-top: 81px;
+}
+
+#office_and_traning h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  margin-bottom: 55px;
+}
+
+.office_and_traning_slider {
+  margin-top: 14px;
+}
+
+.office_and_traning_slider .slick-slide {
+  padding: 0 7px;
+}
+
+.trainingPrevArrow.slick-arrow {
+  position: absolute;
+  top: 50%;
+  left: -18px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.trainingNextArrow.slick-arrow {
+  position: absolute;
+  top: 50%;
+  right: -18px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  cursor: pointer;
+}
+
+.trainingPrevArrow.slick-arrow:hover,
+.trainingNextArrow.slick-arrow:hover {
+  color: #FB312E;
+}
+
+/*=======================================
+About Page Office and training  Part End
+======================================= */
+/*=======================================
+About Page Branch  Part Start
+======================================= */
+#branch {
+  margin-top: 109px;
+}
+
+#branch h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  margin-bottom: 43px;
+}
+
+.branch_item {
+  background: #FDF2F2;
+  border-radius: 30px;
+  padding: 53px;
+}
+
+.branch_item h4 {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 14px;
+}
+
+.branch_item p {
+  color: #605F62;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.branch:nth-child(even) .branch_item {
+  background: #E9F9FC;
+}
+
+/*=======================================
+About Page Branch  Part End
+======================================= */
+/*=======================================
+About Page Training Department  Part Start
+======================================= */
+#training_department {
+  margin-top: 109px;
+  margin-bottom: 97px;
+}
+
+#training_department h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  margin-bottom: 43px;
+}
+
+.training_department_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: start;
+}
+
+.training_department_main a {
+  border: 0.5px solid #D4D4D4;
+  border-radius: 20px;
+  width: 18%;
+  height: 157px;
+  margin-bottom: 24px;
+  margin-right: 24px;
+}
+
+.training_department_main a .training_department_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.training_department_main a .training_department_item .couse_text h3 {
+  max-width: 170px;
+  margin: 0 auto;
+  color: #1F1E1E;
+  text-align: center;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 15px;
+}
+
+/*=======================================
+About Page Training Department  Part End
+======================================= */
+/* About Page Organogram Part Start */
+#organogram {
+  padding-top: 50px;
+}
+
+#organogram > h2 {
+  text-align: center;
+}
+
+/* About Page Organogram Part End */
+/* =================================
+    Desktop-27 আপনার ব্যক্তিগত তথ্য শুরু 
+=================================== */
+form.student_form .form_heading {
+  padding-top: 26px;
+  padding-bottom: 20px;
+}
+
+form.student_form .form_heading h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.course_fee_box.student_form {
+  margin-top: 67px !important;
+}
+
+/* =================================
+    Desktop-27 আপনার ব্যক্তিগত তথ্য শেষ 
+=================================== */
+/* =================================
+    Free Seminer Schedule Area Start
+=================================== */
+#instructors_teachers.free_seminer_schedule {
+  padding-bottom: 0;
+}
+
+#instructors_teachers.free_seminer_schedule .facilities_heading p {
+  padding-bottom: 0;
+}
+
+.seminer_schedule {
+  padding: 0;
+  background: transparent;
+  padding-bottom: 50px;
+}
+
+.prev_semi_video_heading h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  margin-bottom: 54px;
+}
+
+#seminar .seminar_content .text_main {
+  width: 90%;
+}
+
+#previous_seminer_video .overly_icon {
+  opacity: 1;
+}
+
+/* =================================
+    Free Seminer Schedule Area End
+=================================== */
+/* =================================
+    Free Seminer Schedule Area Start
+=================================== */
+#thankyou {
+  width: 100vw;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.thankyou_text {
+  text-align: center;
+  max-width: 370px;
+  position: absolute;
+}
+
+.thankyou_text h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+}
+
+.thankyou_text h4 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+}
+
+.thankyou_text h4 span {
+  color: #FF1E1E;
+}
+
+.thankyou_text p {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: #575757;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 24px;
+}
+
+.thankyou_text .thankyou_btn {
+  margin-top: 52px;
+}
+
+.thankyou_text .thankyou_btn a {
+  width: 159px;
+  text-align: center;
+  padding: 8px 0;
+  margin: 0 6px;
+  border: 1px solid transparent;
+  font-family: Hind Siliguri;
+  color: #fff;
+  background: linear-gradient(214.38deg, #FF8079 -2.24%, #FF1E1E 59.38%);
+  border-radius: 10px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.thankyou_text .thankyou_btn a:hover {
+  color: #FF1E1E;
+  background: transparent;
+  border: 1px solid #FF1E1E;
+}
+
+/* =================================
+    Free Seminer Schedule Area End
+=================================== */
+/* =================================
+    Contact Us Satrt
+=================================== */
+#office_1 {
+  padding-top: 44px;
+  padding-bottom: 78px;
+}
+
+#office_2 {
+  padding-bottom: 132px;
+}
+
+.office_map {
+  position: relative;
+}
+
+.office_map svg {
+  position: absolute;
+  top: 22px;
+  left: -22px;
+}
+
+.office_map iframe {
+  min-height: 349px;
+  border-radius: 19px;
+}
+
+.office_address_main {
+  padding-left: 30px;
+}
+
+.office_address_main .address_text h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  color: #FF1E1E;
+  padding-bottom: 3px;
+}
+
+.office_address_main .address_text ul li {
+  color: #342B27;
+  font-family: Hind;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+
+.office_address_main .address_text p {
+  padding-top: 4px;
+}
+
+.office_address_main .address_text p a {
+  color: #FF1E1E;
+  font-family: Hind;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+
+.office_address_main .phone_number {
+  margin-top: 34px;
+}
+
+.office_address_main .phone_number h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 3px;
+}
+
+.office_address_main .phone_number ul li a {
+  color: #342B27;
+  font-family: Hind;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+
+.divider {
+  padding: 38px;
+}
+
+/* =================================
+    Contact Us End
+=================================== */
+/*===================================
+        Blog news menu Start
+================================== */
+.blog_news {
+  margin-top: 102px;
+  -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.06);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 18px 0;
+}
+
+.blog_menu ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.blog_menu ul li a {
+  color: #605F62;
+  font-family: Hind Siliguri;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+/*===================================
+        Blog news menu End
+================================== */
+/*===================================
+        Blog News hero Area Start
+================================== */
+.blog_heading_search {
+  padding-bottom: 68px;
+}
+
+.blog_heading_search .page_heading h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  background: #ffffff;
+  background: -webkit-linear-gradient(45deg, #ff1e1e 35%, #ff8079 100%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blog_heading_search .blog_search_bar input {
+  font-family: Hind Siliguri;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  padding-left: 14px;
+  padding-right: 34px;
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+}
+
+.blog_heading_search .blog_search_bar input:focus {
+  -webkit-box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+          box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.06);
+}
+
+.blog_heading_search .blog_search_bar button {
+  border: none;
+  background: transparent;
+  font-size: 17px;
+  color: #CF0000;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.blog_search {
+  margin-top: 36px;
+}
+
+.main_blog_grid .big_blog {
+  position: relative;
+}
+
+.main_blog_grid .big_blog .layer_text {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  left: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(14.04%, rgba(0, 0, 0, 0)), color-stop(60.38%, #000000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.04%, #000000 60.38%);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0 52px 46px;
+}
+
+.main_blog_grid .big_blog .layer_text .text h4 {
+  color: #FF7E31;
+  font-family: Hind Siliguri;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.main_blog_grid .big_blog .layer_text .text h3 {
+  color: #ffffff;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+}
+
+.main_blog_grid .big_blog .layer_text .text p {
+  color: #ffffff;
+  font-family: Hind Siliguri;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.main_blog_grid .big_blog .layer_text .text p span {
+  margin-right: 30px;
+  position: relative;
+}
+
+.main_blog_grid .big_blog .layer_text .text p span::after {
+  height: 70%;
+  width: 2px;
+  background: #ffffff;
+  content: "";
+  position: absolute;
+  right: -16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main_blog_grid .big_blog .layer_text .text p span:last-child::after {
+  display: none;
+}
+
+.main_blog_grid .small_blog {
+  margin-bottom: 0.5rem;
+}
+
+.main_blog_grid .small_blog:last-child {
+  margin-bottom: 0;
+}
+
+.main_blog_grid .single_blog_top {
+  background: #2A2424;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.main_blog_grid .single_blog_top .image {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 159px;
+      flex-basis: 159px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.main_blog_grid .single_blog_top .image img {
+  max-height: 156px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main_blog_grid .single_blog_top .text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 274px;
+      flex-basis: 274px;
+  padding: 15px 17px;
+}
+
+.main_blog_grid .single_blog_top .text h5 {
+  color: #FF7E31;
+  font-family: Hind Siliguri;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.main_blog_grid .single_blog_top .text h4 {
+  color: #ffffff;
+  font-family: Hind Siliguri;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 4px;
+  padding-bottom: 6px;
+}
+
+.main_blog_grid .single_blog_top .text p {
+  color: #ffffff;
+  font-family: Hind Siliguri;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.small_blog {
+  position: relative;
+}
+
+.small_blog .layer_text {
+  width: 100%;
+  height: 60%;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(14.04%, rgba(0, 0, 0, 0)), color-stop(60.38%, #000000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.04%, #000000 60.38%);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.small_blog .layer_text .text {
+  padding: 0 28px;
+  padding-bottom: 20px;
+}
+
+.small_blog .layer_text .text h4 {
+  color: #FF7E31;
+  font-family: Hind Siliguri;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.small_blog .layer_text .text h3 {
+  color: #ffffff;
+  font-family: Hind Siliguri;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.small_blog .layer_text .text p {
+  color: #ffffff;
+  font-family: Hind Siliguri;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.small_blog .layer_text .text p span {
+  margin-right: 19px;
+  position: relative;
+}
+
+.small_blog .layer_text .text p span::after {
+  height: 60%;
+  width: 2px;
+  background: #ffffff;
+  content: "";
+  position: absolute;
+  right: -11px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.small_blog .layer_text .text p span:last-child::after {
+  display: none;
+}
+
+/*===================================
+    Blog News hero Area End
+================================== */
+/*===================================
+        Blog news Start
+================================== */
+#letest_poet {
+  margin-top: 76px;
+}
+
+#letest_poet .lelest_post_heading h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 29px;
+}
+
+#letest_poet .letest_post_slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#letest_poet .letest_post_slider .post_item {
+  background: #FFFFFF;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0 13px;
+}
+
+#letest_poet .letest_post_slider .post_item .text {
+  padding: 21px 26px 32px;
+}
+
+#letest_poet .letest_post_slider .post_item .text h5 {
+  color: #FF7E31;
+  font-family: Hind Siliguri;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+#letest_poet .letest_post_slider .post_item .text h5 span {
+  color: #9F9F9F;
+}
+
+#letest_poet .letest_post_slider .post_item .text h5 span.date {
+  color: #9F9F9F;
+  position: relative;
+  margin: 0 8px;
+}
+
+#letest_poet .letest_post_slider .post_item .text h5 span.date::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 15px;
+  width: 1px;
+  background: #9F9F9F;
+}
+
+#letest_poet .letest_post_slider .post_item .text h5 span.date::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 15px;
+  width: 1px;
+  background: #9F9F9F;
+}
+
+#letest_poet .letest_post_slider .post_item .text h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+#letest_poet .letest_post_slider .post_item .text p {
+  color: #575757;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+#letest_poet .prevarrow {
+  width: 39px;
+  height: 39px;
+  background: #FAF9FD;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  line-height: 39px;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  top: 47%;
+  z-index: 10;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#letest_poet .nextarrow {
+  width: 39px;
+  height: 39px;
+  background: #FAF9FD;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  line-height: 39px;
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  top: 47%;
+  z-index: 10;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#letest_poet .prevarrow:hover,
+#letest_poet .nextarrow:hover {
+  color: #CF0000;
+}
+
+/*===================================
+        Blog news menu End
+================================== */
+/*===================================
+        All Blog Area Start
+================================== */
+#all_blog {
+  margin-top: 53px;
+  position: relative;
+}
+
+#all_blog .dots_victor {
+  position: absolute;
+  left: 60px;
+  bottom: 0;
+}
+
+#all_blog .all_blog_heading h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-bottom: 29px;
+}
+
+#all_blog .all_blog_menu {
+  padding-bottom: 40px;
+}
+
+#all_blog .all_blog_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  border-bottom: 0.5px solid #D4D4D4;
+}
+
+#all_blog .all_blog_menu li {
+  text-align: center;
+}
+
+#all_blog .all_blog_menu li button {
+  color: #605F62;
+  font-family: Hind Siliguri;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  background: transparent;
+  border: transparent;
+  display: inline-block;
+  position: relative;
+}
+
+#all_blog .all_blog_menu li button.active::after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 3px;
+  background: #CF0000;
+  left: 50%;
+  bottom: -1.5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.all_blog_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #ffffff;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  gap: 0 55px;
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+
+.all_blog_item .image {
+  -ms-flex-preferred-size: 328px;
+      flex-basis: 328px;
+}
+
+.all_blog_item .text {
+  -ms-flex-preferred-size: 702px;
+      flex-basis: 702px;
+}
+
+.all_blog_item .text h5 {
+  color: #FF7E31;
+  font-family: Hind Siliguri;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.all_blog_item .text h5 span {
+  color: #9F9F9F;
+}
+
+.all_blog_item .text h5 span.date {
+  color: #9F9F9F;
+  position: relative;
+  margin: 0 8px;
+}
+
+.all_blog_item .text h5 span.date::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 15px;
+  width: 1px;
+  background: #9F9F9F;
+}
+
+.all_blog_item .text h5 span.date::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 15px;
+  width: 1px;
+  background: #9F9F9F;
+}
+
+.all_blog_item .text h3 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.20000000298023224px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+.all_blog_item .text p {
+  color: #575757;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+.pagination_btn {
+  padding-top: 18px;
+  padding-bottom: 108px;
+}
+
+.pagination_btn ul li {
+  margin: 0 8px;
+}
+
+.pagination_btn ul li a {
+  color: #838383;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.20000000298023224px;
+  width: 35px;
+  text-align: center;
+  padding: 0 11px;
+  border: 1.5px solid #D5D5D5;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.pagination_btn ul li a:hover {
+  background: linear-gradient(214.38deg, #FF8079 -2.24%, #FF1E1E 59.38%);
+  color: #ffffff;
+  border: 1.5px solid #FF1E1E;
+}
+
+.pagination_btn ul li a.active {
+  background: linear-gradient(214.38deg, #FF8079 -2.24%, #FF1E1E 59.38%);
+  color: #ffffff;
+  border: 1.5px solid #FF1E1E;
+}
+
+/*===================================
+        All Blog Area End
+================================== */
+/*===================================
+        Blog Dtails Page Area Start
+================================== */
+#blog_dtails_main {
+  padding-top: 63px;
+}
+
+#blog_dtails_main .blog_dtails {
+  border-bottom: 0.5px solid rgba(126, 126, 126, 0.5);
+  padding-bottom: 21px;
+}
+
+#blog_dtails_main .blog_dtails .heading h3 {
+  color: #FF1E1E;
+  font-family: Hind Siliguri;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+#blog_dtails_main .blog_dtails .heading h2 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 49px;
+  max-width: 603px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#blog_dtails_main .blog_dtails .heading p {
+  color: #414141;
+  font-family: Hind Siliguri;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  padding-bottom: 53px;
+}
+
+#blog_dtails_main .blog_dtails .heading p span {
+  font-family: Ruposhi Bangla Unicode;
+  margin-left: 50px;
+}
+
+#blog_dtails_main .blog_dtails .image {
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 43px;
+}
+
+#blog_dtails_main .blog_dtails .dtails p {
+  color: #575757;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+#blog_dtails_main .blog_dtails .dtails p span {
+  padding-top: 28px;
+}
+
+#blog_dtails_main .blog_dtails .dtails h4 {
+  color: #232222;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-top: 28px;
+  padding-bottom: 13px;
+}
+
+.tag_share {
+  margin-top: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tag_share .tag label {
+  color: #232222;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-right: 5px;
+}
+
+.tag_share .tag a {
+  color: #414141;
+  font-family: Hind Siliguri;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 8px 23px;
+  background: #ffffff;
+  -webkit-box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.06);
+          box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.tag_share .share label {
+  color: #232222;
+  font-family: Hind Siliguri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-right: 5px;
+}
+
+.tag_share .share a {
+  font-size: 17px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  background: #ffffff;
+  margin-left: 15px;
+  -webkit-box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.06);
+          box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.06);
+}
+
+.tag_share .share a .twitter {
+  color: #33CCFF;
+}
+
+.tag_share .share a .facebook {
+  color: #3C5A99;
+}
+
+.tag_share .share a .linkedin {
+  color: #007AB9;
+}
+
+.tag_share .share a .pinterest {
+  color: #FF0000;
+}
+
+.related_post {
+  padding-bottom: 143px;
+}
+
+/*===================================
+        Blog Dtails Page Area End
+================================== */
+/*===================================
+Blog Dtails Sidebar Page Area Start
+================================== */
+.author {
+  background: #FAF9FD;
+  border-radius: 32px;
+  text-align: center;
+  padding-top: 72px;
+  padding-bottom: 28px;
+  margin-top: 12px;
+  position: relative;
+}
+
+.author label {
+  position: absolute;
+  top: 31px;
+  left: -16px;
+  z-index: 10;
+}
+
+.author .image {
+  width: 162px;
+  height: 162px;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.author .text h4 {
+  color: #1F1E1E;
+  font-family: Hind Siliguri;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  padding-top: 26px;
+  padding-bottom: 7px;
+}
+
+.author .text h5 {
+  color: #FF7E31;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 10px;
+}
+
+.author .text p {
+  color: #605F62;
+  font-family: Ruposhi Bangla Unicode;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.20000000298023224px;
+  max-width: 306px;
+  margin: 0 auto;
+  padding-bottom: 26px;
+}
+
+.author .icon {
+  text-align: center;
+}
+
+.author .icon a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.author .icon a i {
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.author .icon a.facebook {
+  background: #395185;
+}
+
+.author .icon a.instagram {
+  background: -webkit-gradient(linear, left top, left bottom, from(#D24ADF), color-stop(#9748BE), color-stop(#BD4697), color-stop(#D8447A), color-stop(#E94369), color-stop(#EF4363), color-stop(#EF545E), color-stop(#F08053), to(#F2C141));
+  background: linear-gradient(#D24ADF, #9748BE, #BD4697, #D8447A, #E94369, #EF4363, #EF545E, #F08053, #F2C141);
+}
+
+.author .icon a.linkedin {
+  background: #0A66C2;
+}
+
+.author .icon a.twitter {
+  background: #55ACEE;
+}
+
+.coures_discount {
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: 43px;
+}
+
+.coures_discount a {
+  display: block;
+}
+
+.seminar_discount {
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.seminar_discount a {
+  display: block;
+}
+
+/*===================================
+Blog Dtails Sidebar Page Area End
+================================== */
+/*# sourceMappingURL=style.css.map */

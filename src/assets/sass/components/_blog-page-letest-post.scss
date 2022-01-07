@@ -1,0 +1,138 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/*===================================
+        Blog news Start
+================================== */
+#letest_poet{
+    margin-top: 76px;
+    .lelest_post_heading{
+        h3{
+            @include heading_3;
+            padding-bottom: 29px;
+        }
+    }
+    .letest_post_slider{
+        .slick-track{
+            display: flex;
+        }
+        .post_item{
+            background: #FFFFFF;
+            border: 0.5px solid rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 0 13px;
+            .text{
+                padding: 21px 26px 32px;
+                h5{
+                    @include heading_5($ff7e31);
+                    span{
+                        color: $c9F9F9F;
+                    }
+                    span.date{
+                        color: $c9F9F9F;
+                        position: relative;
+                        margin: 0 8px;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            right:-6px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            height: 15px;
+                            width: 1px;
+                            background: $c9F9F9F;
+                        }
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            left: -6px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            height: 15px;
+                            width: 1px;
+                            background: $c9F9F9F;
+                        }
+                    }
+                }
+                h3{
+                    @include heading_3;
+                    padding-top: 10px;
+                    padding-bottom: 12px;
+                }
+                p{
+                    color: $pgc_pera_color;
+                    //styleName: Paragraph Normal / Small;
+                    font-family: Ruposhi Bangla Unicode;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: 0.20000000298023224px;
+                }
+            }
+        }
+    }
+}
+#letest_poet .prevarrow {
+	width: 39px;
+	height: 39px;
+	background: #FAF9FD;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	text-align: center;
+	line-height: 39px;
+	position: absolute;
+	left: -20px;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+	-moz-transition: all linear .3s;
+	-ms-transition: all linear .3s;
+	-o-transition: all linear .3s;
+	top: 47%;
+	z-index: 10;
+	color: rgba(0, 0, 0, 0.3);
+}
+#letest_poet .nextarrow {
+	width: 39px;
+	height: 39px;
+	background: #FAF9FD;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	text-align: center;
+	line-height: 39px;
+	position: absolute;
+	right: -12px;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+	-moz-transition: all linear .3s;
+	-ms-transition: all linear .3s;
+	-o-transition: all linear .3s;
+	top: 47%;
+	z-index: 10;
+	color: rgba(0, 0, 0, 0.3);
+}
+#letest_poet .prevarrow:hover,
+#letest_poet .nextarrow:hover {
+	color: #CF0000;
+}
+/*===================================
+        Blog news menu End
+================================== */
